@@ -11,8 +11,8 @@
     "slug": "australia",
     "name": "Australia",
     "tier": 1,
-    "status": "pending",
-    "generatedAt": null,
+    "status": "generated",
+    "generatedAt": "2026-02-26T12:53:11.866Z",
     "error": null
   },
   {

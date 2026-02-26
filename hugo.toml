@@ -1,0 +1,38 @@
+baseURL = "https://nichtagentur.github.io/when-to-go/"
+languageCode = "en-us"
+title = "When To Go -- Best Time to Visit Every Country"
+theme = "whentogotravel"
+
+# SEO-friendly permalinks
+[permalinks]
+  [permalinks.page]
+    countries = "/:slug/"
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+
+# Taxonomy
+[taxonomies]
+  region = "regions"
+
+# Params used in templates
+[params]
+  description = "Expert travel guides on the best time to visit every country. Month-by-month weather, activities, and tour recommendations."
+  author = "Elena Vasquez"
+  authorTitle = "Senior Travel Editor"
+  siteUrl = "https://nichtagentur.github.io/when-to-go"
+  ogImage = "/images/og-default.jpg"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

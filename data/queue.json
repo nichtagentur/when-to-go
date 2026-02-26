@@ -1,0 +1,1562 @@
+[
+  {
+    "slug": "argentina",
+    "name": "Argentina",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "australia",
+    "name": "Australia",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "chile",
+    "name": "Chile",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "colombia",
+    "name": "Colombia",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "costa-rica",
+    "name": "Costa Rica",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "croatia",
+    "name": "Croatia",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "cuba",
+    "name": "Cuba",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "egypt",
+    "name": "Egypt",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "greece",
+    "name": "Greece",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "iceland",
+    "name": "Iceland",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "india",
+    "name": "India",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "indonesia",
+    "name": "Indonesia",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "japan",
+    "name": "Japan",
+    "tier": 1,
+    "status": "generated",
+    "generatedAt": "2026-02-26T10:32:05.048Z",
+    "error": null
+  },
+  {
+    "slug": "jordan",
+    "name": "Jordan",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mexico",
+    "name": "Mexico",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "morocco",
+    "name": "Morocco",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "nepal",
+    "name": "Nepal",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "norway",
+    "name": "Norway",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "peru",
+    "name": "Peru",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "portugal",
+    "name": "Portugal",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzania",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnam",
+    "tier": 1,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "albania",
+    "name": "Albania",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "armenia",
+    "name": "Armenia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "austria",
+    "name": "Austria",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bahamas",
+    "name": "Bahamas",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "belgium",
+    "name": "Belgium",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "belize",
+    "name": "Belize",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bhutan",
+    "name": "Bhutan",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bolivia",
+    "name": "Bolivia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "botswana",
+    "name": "Botswana",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "brazil",
+    "name": "Brazil",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bulgaria",
+    "name": "Bulgaria",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "cambodia",
+    "name": "Cambodia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "canada",
+    "name": "Canada",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "china",
+    "name": "China",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "cyprus",
+    "name": "Cyprus",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "czech-republic",
+    "name": "Czech Republic",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "denmark",
+    "name": "Denmark",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "dominican-republic",
+    "name": "Dominican Republic",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ecuador",
+    "name": "Ecuador",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "estonia",
+    "name": "Estonia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ethiopia",
+    "name": "Ethiopia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "fiji",
+    "name": "Fiji",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "finland",
+    "name": "Finland",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "georgia",
+    "name": "Georgia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ghana",
+    "name": "Ghana",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "guatemala",
+    "name": "Guatemala",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "hungary",
+    "name": "Hungary",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "iran",
+    "name": "Iran",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "israel",
+    "name": "Israel",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "jamaica",
+    "name": "Jamaica",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "kenya",
+    "name": "Kenya",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "laos",
+    "name": "Laos",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "latvia",
+    "name": "Latvia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "lithuania",
+    "name": "Lithuania",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "madagascar",
+    "name": "Madagascar",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malaysia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "maldives",
+    "name": "Maldives",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "malta",
+    "name": "Malta",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mauritius",
+    "name": "Mauritius",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mongolia",
+    "name": "Mongolia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "montenegro",
+    "name": "Montenegro",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "myanmar",
+    "name": "Myanmar",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "namibia",
+    "name": "Namibia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "netherlands",
+    "name": "Netherlands",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "nicaragua",
+    "name": "Nicaragua",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "north-macedonia",
+    "name": "North Macedonia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "oman",
+    "name": "Oman",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "panama",
+    "name": "Panama",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "philippines",
+    "name": "Philippines",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "poland",
+    "name": "Poland",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "romania",
+    "name": "Romania",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "russia",
+    "name": "Russia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "rwanda",
+    "name": "Rwanda",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "senegal",
+    "name": "Senegal",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "serbia",
+    "name": "Serbia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapore",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "slovakia",
+    "name": "Slovakia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "slovenia",
+    "name": "Slovenia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "south-korea",
+    "name": "South Korea",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "sweden",
+    "name": "Sweden",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "switzerland",
+    "name": "Switzerland",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "tunisia",
+    "name": "Tunisia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "united-kingdom",
+    "name": "United Kingdom",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "united-states",
+    "name": "United States",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "uruguay",
+    "name": "Uruguay",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "zambia",
+    "name": "Zambia",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
+    "tier": 2,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "afghanistan",
+    "name": "Afghanistan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "algeria",
+    "name": "Algeria",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "andorra",
+    "name": "Andorra",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "angola",
+    "name": "Angola",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bahrain",
+    "name": "Bahrain",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "bangladesh",
+    "name": "Bangladesh",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "barbados",
+    "name": "Barbados",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "belarus",
+    "name": "Belarus",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "benin",
+    "name": "Benin",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "brunei",
+    "name": "Brunei",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "burkina-faso",
+    "name": "Burkina Faso",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "burundi",
+    "name": "Burundi",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "cabo-verde",
+    "name": "Cabo Verde",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "cameroon",
+    "name": "Cameroon",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "central-african-republic",
+    "name": "Central African Republic",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "chad",
+    "name": "Chad",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "comoros",
+    "name": "Comoros",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "congo",
+    "name": "Congo",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "democratic-republic-of-the-congo",
+    "name": "Democratic Republic of the Congo",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "djibouti",
+    "name": "Djibouti",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "dominica",
+    "name": "Dominica",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "east-timor",
+    "name": "East Timor",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "el-salvador",
+    "name": "El Salvador",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "equatorial-guinea",
+    "name": "Equatorial Guinea",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "eritrea",
+    "name": "Eritrea",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "eswatini",
+    "name": "Eswatini",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "gabon",
+    "name": "Gabon",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "gambia",
+    "name": "Gambia",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "grenada",
+    "name": "Grenada",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "guinea",
+    "name": "Guinea",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "guinea-bissau",
+    "name": "Guinea-Bissau",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "guyana",
+    "name": "Guyana",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "haiti",
+    "name": "Haiti",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "honduras",
+    "name": "Honduras",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "iraq",
+    "name": "Iraq",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ivory-coast",
+    "name": "Ivory Coast",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "kiribati",
+    "name": "Kiribati",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "kuwait",
+    "name": "Kuwait",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "lebanon",
+    "name": "Lebanon",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "lesotho",
+    "name": "Lesotho",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "liberia",
+    "name": "Liberia",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "libya",
+    "name": "Libya",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "luxembourg",
+    "name": "Luxembourg",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "malawi",
+    "name": "Malawi",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mali",
+    "name": "Mali",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "marshall-islands",
+    "name": "Marshall Islands",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mauritania",
+    "name": "Mauritania",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "micronesia",
+    "name": "Micronesia",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "moldova",
+    "name": "Moldova",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "monaco",
+    "name": "Monaco",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "mozambique",
+    "name": "Mozambique",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "nauru",
+    "name": "Nauru",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "niger",
+    "name": "Niger",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "nigeria",
+    "name": "Nigeria",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "north-korea",
+    "name": "North Korea",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "pakistan",
+    "name": "Pakistan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "palau",
+    "name": "Palau",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "palestine",
+    "name": "Palestine",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "paraguay",
+    "name": "Paraguay",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "saint-kitts-and-nevis",
+    "name": "Saint Kitts and Nevis",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "saint-lucia",
+    "name": "Saint Lucia",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "samoa",
+    "name": "Samoa",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "san-marino",
+    "name": "San Marino",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "sao-tome-and-principe",
+    "name": "Sao Tome and Principe",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "sierra-leone",
+    "name": "Sierra Leone",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "solomon-islands",
+    "name": "Solomon Islands",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "somalia",
+    "name": "Somalia",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "south-sudan",
+    "name": "South Sudan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "sudan",
+    "name": "Sudan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "suriname",
+    "name": "Suriname",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "syria",
+    "name": "Syria",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "tajikistan",
+    "name": "Tajikistan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "togo",
+    "name": "Togo",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "tonga",
+    "name": "Tonga",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "trinidad-and-tobago",
+    "name": "Trinidad and Tobago",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "turkmenistan",
+    "name": "Turkmenistan",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "tuvalu",
+    "name": "Tuvalu",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "ukraine",
+    "name": "Ukraine",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "vanuatu",
+    "name": "Vanuatu",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "vatican-city",
+    "name": "Vatican City",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "venezuela",
+    "name": "Venezuela",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  },
+  {
+    "slug": "yemen",
+    "name": "Yemen",
+    "tier": 3,
+    "status": "pending",
+    "generatedAt": null,
+    "error": null
+  }
+]

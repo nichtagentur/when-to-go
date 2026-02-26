@@ -1,0 +1,207 @@
+/* Reset and base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: #1a5276;
+  color: #fff;
+  padding: 15px 0;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.site-header nav a {
+  color: #d4e6f1;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+}
+.site-header nav a:hover { color: #fff; }
+
+/* Hero section (homepage) */
+.hero-section {
+  background: linear-gradient(135deg, #1a5276, #2e86c1);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.hero-section h1 { font-size: 2.2rem; margin-bottom: 15px; }
+.hero-subtitle { font-size: 1.15rem; opacity: 0.9; max-width: 650px; margin: 0 auto; }
+
+/* Country grid */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 0;
+}
+.country-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.country-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.country-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.card-content { padding: 15px; }
+.card-content h2 { font-size: 1.15rem; margin-bottom: 8px; }
+.card-content h2 a { color: #1a5276; text-decoration: none; }
+.card-content h2 a:hover { text-decoration: underline; }
+.card-content p { font-size: 0.9rem; color: #666; }
+.best-months { color: #1a5276 !important; margin-top: 8px; }
+
+/* Article */
+.country-article { padding: 30px 20px; }
+.country-article h1 { font-size: 2rem; color: #1a5276; margin-bottom: 20px; }
+
+.hero-image { margin-bottom: 25px; }
+.hero-image img { width: 100%; height: auto; border-radius: 8px; }
+.photo-credit { font-size: 0.8rem; color: #999; margin-top: 5px; }
+
+/* Table of contents */
+.toc {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.toc h2 { font-size: 1.1rem; margin-bottom: 10px; }
+.toc ul { padding-left: 20px; }
+.toc li { margin-bottom: 5px; }
+.toc a { color: #2e86c1; text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Article content */
+.article-content h2 {
+  font-size: 1.5rem;
+  color: #1a5276;
+  margin: 35px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #d4e6f1;
+}
+.article-content h3 { font-size: 1.2rem; color: #2e86c1; margin: 25px 0 10px; }
+.article-content p { margin-bottom: 15px; }
+.article-content ul, .article-content ol { margin: 10px 0 15px 25px; }
+.article-content li { margin-bottom: 5px; }
+.article-content a { color: #2e86c1; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.article-content th, .article-content td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+.article-content th { background: #f8f9fa; font-weight: 600; }
+
+/* Climate chart */
+.climate-chart { margin: 30px 0; text-align: center; }
+.climate-chart img { max-width: 100%; border-radius: 8px; }
+
+/* TourRadar CTA */
+.tourradar-cta {
+  background: linear-gradient(135deg, #e8f6f3, #d5f5e3);
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 35px 0;
+  text-align: center;
+}
+.tourradar-cta h3 { color: #1e8449; margin-bottom: 10px; font-size: 1.3rem; }
+.tourradar-cta p { color: #555; margin-bottom: 15px; }
+.cta-button {
+  display: inline-block;
+  background: #27ae60;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: background 0.2s;
+}
+.cta-button:hover { background: #1e8449; }
+
+/* FAQ */
+.faq-section { margin: 35px 0; }
+.faq-section h2 { font-size: 1.5rem; color: #1a5276; margin-bottom: 20px; }
+.faq-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.faq-item h3 { font-size: 1.1rem; color: #333; margin-bottom: 8px; }
+.faq-item p { color: #555; margin: 0; }
+
+/* Related countries */
+.related-countries { margin: 35px 0; }
+.related-countries h2 { font-size: 1.3rem; margin-bottom: 15px; color: #1a5276; }
+.related-countries ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.related-countries li a {
+  display: inline-block;
+  background: #d4e6f1;
+  color: #1a5276;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.related-countries li a:hover { background: #a9cce3; }
+
+/* Author bio */
+.author-bio {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 35px 0;
+}
+.author-photo { border-radius: 50%; }
+.author-name { font-weight: 600; margin-bottom: 2px; }
+.author-name a { color: #1a5276; text-decoration: none; }
+.author-title { font-size: 0.9rem; color: #666; margin-bottom: 5px; }
+.author-desc { font-size: 0.85rem; color: #777; }
+
+/* Footer */
+.site-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+.site-footer p { font-size: 0.85rem; color: #666; margin-bottom: 5px; }
+.site-footer a { color: #2e86c1; text-decoration: none; }
+
+/* About/Author pages */
+.page-content { padding: 40px 20px; }
+.page-content h1 { color: #1a5276; margin-bottom: 20px; }
+.page-content h2 { color: #2e86c1; margin: 25px 0 10px; }
+.page-content p { margin-bottom: 15px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 { font-size: 1.6rem; }
+  .country-grid { grid-template-columns: 1fr; }
+  .author-bio { flex-direction: column; text-align: center; }
+  .site-header .container { flex-direction: column; gap: 10px; }
+}

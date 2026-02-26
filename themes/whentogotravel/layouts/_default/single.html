@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="country-article container">
+
+  {{/* Hero image */}}
+  {{ if .Params.hero_image }}
+  <div class="hero-image">
+    <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="1200" height="630" loading="eager">
+    {{ if .Params.hero_credit }}
+    <p class="photo-credit">Photo: {{ .Params.hero_credit }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <h1>{{ .Title }}</h1>
+
+  {{/* Table of contents */}}
+  {{ if .TableOfContents }}
+  <nav class="toc">
+    <h2>Contents</h2>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
+  {{/* Article content */}}
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+
+  {{/* Climate chart */}}
+  {{ if .Params.climate_chart }}
+  <div class="climate-chart">
+    <img src="{{ .Params.climate_chart | relURL }}" alt="Climate chart for {{ .Params.country_name }}" width="800" height="500" loading="lazy">
+  </div>
+  {{ end }}
+
+  {{/* TourRadar CTA */}}
+  {{ partial "tourradar-cta.html" . }}
+
+  {{/* FAQ section */}}
+  {{ if .Params.faq }}
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    {{ range .Params.faq }}
+    <div class="faq-item">
+      <h3>{{ .question }}</h3>
+      <p>{{ .answer }}</p>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{/* Related countries */}}
+  {{ if .Params.related_countries }}
+  <section class="related-countries">
+    <h2>Related Destinations</h2>
+    <ul>
+      {{ range .Params.related_countries }}
+      <li><a href="{{ printf "/best-time-to-visit-%s/" . | relURL }}">Best Time to Visit {{ . | humanize | title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{/* Author bio */}}
+  {{ partial "author-bio.html" . }}
+
+</article>
+{{ end }}

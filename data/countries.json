@@ -1,0 +1,1562 @@
+[
+  {
+    "name": "Afghanistan",
+    "slug": "afghanistan",
+    "region": "Asia",
+    "tourradar_slug": "afghanistan",
+    "tier": 3,
+    "related": ["pakistan", "iran", "tajikistan", "uzbekistan"]
+  },
+  {
+    "name": "Albania",
+    "slug": "albania",
+    "region": "Europe",
+    "tourradar_slug": "albania",
+    "tier": 2,
+    "related": ["montenegro", "north-macedonia", "greece", "kosovo"]
+  },
+  {
+    "name": "Algeria",
+    "slug": "algeria",
+    "region": "Africa",
+    "tourradar_slug": "algeria",
+    "tier": 3,
+    "related": ["morocco", "tunisia", "libya", "mauritania"]
+  },
+  {
+    "name": "Andorra",
+    "slug": "andorra",
+    "region": "Europe",
+    "tourradar_slug": "andorra",
+    "tier": 3,
+    "related": ["spain", "france", "portugal"]
+  },
+  {
+    "name": "Angola",
+    "slug": "angola",
+    "region": "Africa",
+    "tourradar_slug": "angola",
+    "tier": 3,
+    "related": ["namibia", "zambia", "democratic-republic-of-the-congo"]
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "slug": "antigua-and-barbuda",
+    "region": "Caribbean",
+    "tourradar_slug": "antigua-and-barbuda",
+    "tier": 3,
+    "related": ["saint-kitts-and-nevis", "dominica", "barbados"]
+  },
+  {
+    "name": "Argentina",
+    "slug": "argentina",
+    "region": "South America",
+    "tourradar_slug": "argentina",
+    "tier": 1,
+    "related": ["chile", "uruguay", "brazil", "peru"]
+  },
+  {
+    "name": "Armenia",
+    "slug": "armenia",
+    "region": "Asia",
+    "tourradar_slug": "armenia",
+    "tier": 2,
+    "related": ["georgia", "turkey", "iran", "azerbaijan"]
+  },
+  {
+    "name": "Australia",
+    "slug": "australia",
+    "region": "Oceania",
+    "tourradar_slug": "australia",
+    "tier": 1,
+    "related": ["new-zealand", "fiji", "indonesia", "papua-new-guinea"]
+  },
+  {
+    "name": "Austria",
+    "slug": "austria",
+    "region": "Europe",
+    "tourradar_slug": "austria",
+    "tier": 2,
+    "related": ["germany", "switzerland", "czech-republic", "hungary"]
+  },
+  {
+    "name": "Azerbaijan",
+    "slug": "azerbaijan",
+    "region": "Asia",
+    "tourradar_slug": "azerbaijan",
+    "tier": 3,
+    "related": ["georgia", "armenia", "iran", "turkey"]
+  },
+  {
+    "name": "Bahamas",
+    "slug": "bahamas",
+    "region": "Caribbean",
+    "tourradar_slug": "bahamas",
+    "tier": 2,
+    "related": ["cuba", "jamaica", "turks-and-caicos"]
+  },
+  {
+    "name": "Bahrain",
+    "slug": "bahrain",
+    "region": "Middle East",
+    "tourradar_slug": "bahrain",
+    "tier": 3,
+    "related": ["saudi-arabia", "qatar", "united-arab-emirates"]
+  },
+  {
+    "name": "Bangladesh",
+    "slug": "bangladesh",
+    "region": "Asia",
+    "tourradar_slug": "bangladesh",
+    "tier": 3,
+    "related": ["india", "myanmar", "nepal", "sri-lanka"]
+  },
+  {
+    "name": "Barbados",
+    "slug": "barbados",
+    "region": "Caribbean",
+    "tourradar_slug": "barbados",
+    "tier": 3,
+    "related": ["saint-lucia", "trinidad-and-tobago", "grenada"]
+  },
+  {
+    "name": "Belarus",
+    "slug": "belarus",
+    "region": "Europe",
+    "tourradar_slug": "belarus",
+    "tier": 3,
+    "related": ["poland", "ukraine", "lithuania", "russia"]
+  },
+  {
+    "name": "Belgium",
+    "slug": "belgium",
+    "region": "Europe",
+    "tourradar_slug": "belgium",
+    "tier": 2,
+    "related": ["netherlands", "france", "luxembourg", "germany"]
+  },
+  {
+    "name": "Belize",
+    "slug": "belize",
+    "region": "Central America",
+    "tourradar_slug": "belize",
+    "tier": 2,
+    "related": ["guatemala", "mexico", "honduras"]
+  },
+  {
+    "name": "Benin",
+    "slug": "benin",
+    "region": "Africa",
+    "tourradar_slug": "benin",
+    "tier": 3,
+    "related": ["togo", "nigeria", "burkina-faso", "ghana"]
+  },
+  {
+    "name": "Bhutan",
+    "slug": "bhutan",
+    "region": "Asia",
+    "tourradar_slug": "bhutan",
+    "tier": 2,
+    "related": ["nepal", "india", "tibet"]
+  },
+  {
+    "name": "Bolivia",
+    "slug": "bolivia",
+    "region": "South America",
+    "tourradar_slug": "bolivia",
+    "tier": 2,
+    "related": ["peru", "chile", "argentina", "brazil"]
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "slug": "bosnia-and-herzegovina",
+    "region": "Europe",
+    "tourradar_slug": "bosnia-and-herzegovina",
+    "tier": 2,
+    "related": ["croatia", "serbia", "montenegro"]
+  },
+  {
+    "name": "Botswana",
+    "slug": "botswana",
+    "region": "Africa",
+    "tourradar_slug": "botswana",
+    "tier": 2,
+    "related": ["south-africa", "namibia", "zimbabwe", "zambia"]
+  },
+  {
+    "name": "Brazil",
+    "slug": "brazil",
+    "region": "South America",
+    "tourradar_slug": "brazil",
+    "tier": 2,
+    "related": ["argentina", "colombia", "peru", "chile"]
+  },
+  {
+    "name": "Brunei",
+    "slug": "brunei",
+    "region": "Asia",
+    "tourradar_slug": "brunei",
+    "tier": 3,
+    "related": ["malaysia", "indonesia", "philippines"]
+  },
+  {
+    "name": "Bulgaria",
+    "slug": "bulgaria",
+    "region": "Europe",
+    "tourradar_slug": "bulgaria",
+    "tier": 2,
+    "related": ["romania", "greece", "north-macedonia", "turkey"]
+  },
+  {
+    "name": "Burkina Faso",
+    "slug": "burkina-faso",
+    "region": "Africa",
+    "tourradar_slug": "burkina-faso",
+    "tier": 3,
+    "related": ["ghana", "mali", "niger", "ivory-coast"]
+  },
+  {
+    "name": "Burundi",
+    "slug": "burundi",
+    "region": "Africa",
+    "tourradar_slug": "burundi",
+    "tier": 3,
+    "related": ["rwanda", "tanzania", "democratic-republic-of-the-congo"]
+  },
+  {
+    "name": "Cabo Verde",
+    "slug": "cabo-verde",
+    "region": "Africa",
+    "tourradar_slug": "cape-verde",
+    "tier": 3,
+    "related": ["senegal", "gambia", "morocco"]
+  },
+  {
+    "name": "Cambodia",
+    "slug": "cambodia",
+    "region": "Asia",
+    "tourradar_slug": "cambodia",
+    "tier": 2,
+    "related": ["vietnam", "thailand", "laos", "myanmar"]
+  },
+  {
+    "name": "Cameroon",
+    "slug": "cameroon",
+    "region": "Africa",
+    "tourradar_slug": "cameroon",
+    "tier": 3,
+    "related": ["nigeria", "gabon", "equatorial-guinea", "chad"]
+  },
+  {
+    "name": "Canada",
+    "slug": "canada",
+    "region": "North America",
+    "tourradar_slug": "canada",
+    "tier": 2,
+    "related": ["united-states", "iceland", "norway"]
+  },
+  {
+    "name": "Central African Republic",
+    "slug": "central-african-republic",
+    "region": "Africa",
+    "tourradar_slug": "central-african-republic",
+    "tier": 3,
+    "related": ["cameroon", "chad", "democratic-republic-of-the-congo", "south-sudan"]
+  },
+  {
+    "name": "Chad",
+    "slug": "chad",
+    "region": "Africa",
+    "tourradar_slug": "chad",
+    "tier": 3,
+    "related": ["niger", "nigeria", "cameroon", "libya"]
+  },
+  {
+    "name": "Chile",
+    "slug": "chile",
+    "region": "South America",
+    "tourradar_slug": "chile",
+    "tier": 1,
+    "related": ["argentina", "peru", "bolivia", "ecuador"]
+  },
+  {
+    "name": "China",
+    "slug": "china",
+    "region": "Asia",
+    "tourradar_slug": "china",
+    "tier": 2,
+    "related": ["japan", "vietnam", "south-korea", "mongolia"]
+  },
+  {
+    "name": "Colombia",
+    "slug": "colombia",
+    "region": "South America",
+    "tourradar_slug": "colombia",
+    "tier": 1,
+    "related": ["ecuador", "peru", "panama", "brazil"]
+  },
+  {
+    "name": "Comoros",
+    "slug": "comoros",
+    "region": "Africa",
+    "tourradar_slug": "comoros",
+    "tier": 3,
+    "related": ["madagascar", "mozambique", "tanzania"]
+  },
+  {
+    "name": "Congo",
+    "slug": "congo",
+    "region": "Africa",
+    "tourradar_slug": "congo",
+    "tier": 3,
+    "related": ["gabon", "cameroon", "democratic-republic-of-the-congo"]
+  },
+  {
+    "name": "Costa Rica",
+    "slug": "costa-rica",
+    "region": "Central America",
+    "tourradar_slug": "costa-rica",
+    "tier": 1,
+    "related": ["panama", "nicaragua", "colombia", "belize"]
+  },
+  {
+    "name": "Croatia",
+    "slug": "croatia",
+    "region": "Europe",
+    "tourradar_slug": "croatia",
+    "tier": 1,
+    "related": ["montenegro", "slovenia", "bosnia-and-herzegovina", "italy"]
+  },
+  {
+    "name": "Cuba",
+    "slug": "cuba",
+    "region": "Caribbean",
+    "tourradar_slug": "cuba",
+    "tier": 1,
+    "related": ["jamaica", "mexico", "bahamas", "dominican-republic"]
+  },
+  {
+    "name": "Cyprus",
+    "slug": "cyprus",
+    "region": "Europe",
+    "tourradar_slug": "cyprus",
+    "tier": 2,
+    "related": ["greece", "turkey", "malta", "lebanon"]
+  },
+  {
+    "name": "Czech Republic",
+    "slug": "czech-republic",
+    "region": "Europe",
+    "tourradar_slug": "czech-republic",
+    "tier": 2,
+    "related": ["austria", "germany", "poland", "slovakia"]
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "slug": "democratic-republic-of-the-congo",
+    "region": "Africa",
+    "tourradar_slug": "democratic-republic-of-the-congo",
+    "tier": 3,
+    "related": ["congo", "rwanda", "uganda", "zambia"]
+  },
+  {
+    "name": "Denmark",
+    "slug": "denmark",
+    "region": "Europe",
+    "tourradar_slug": "denmark",
+    "tier": 2,
+    "related": ["sweden", "norway", "germany", "iceland"]
+  },
+  {
+    "name": "Djibouti",
+    "slug": "djibouti",
+    "region": "Africa",
+    "tourradar_slug": "djibouti",
+    "tier": 3,
+    "related": ["ethiopia", "eritrea", "somalia"]
+  },
+  {
+    "name": "Dominica",
+    "slug": "dominica",
+    "region": "Caribbean",
+    "tourradar_slug": "dominica",
+    "tier": 3,
+    "related": ["martinique", "guadeloupe", "saint-lucia"]
+  },
+  {
+    "name": "Dominican Republic",
+    "slug": "dominican-republic",
+    "region": "Caribbean",
+    "tourradar_slug": "dominican-republic",
+    "tier": 2,
+    "related": ["cuba", "jamaica", "puerto-rico", "haiti"]
+  },
+  {
+    "name": "East Timor",
+    "slug": "east-timor",
+    "region": "Asia",
+    "tourradar_slug": "east-timor",
+    "tier": 3,
+    "related": ["indonesia", "australia", "papua-new-guinea"]
+  },
+  {
+    "name": "Ecuador",
+    "slug": "ecuador",
+    "region": "South America",
+    "tourradar_slug": "ecuador",
+    "tier": 2,
+    "related": ["peru", "colombia", "chile", "bolivia"]
+  },
+  {
+    "name": "Egypt",
+    "slug": "egypt",
+    "region": "Africa",
+    "tourradar_slug": "egypt",
+    "tier": 1,
+    "related": ["jordan", "morocco", "israel", "turkey"]
+  },
+  {
+    "name": "El Salvador",
+    "slug": "el-salvador",
+    "region": "Central America",
+    "tourradar_slug": "el-salvador",
+    "tier": 3,
+    "related": ["guatemala", "honduras", "nicaragua"]
+  },
+  {
+    "name": "Equatorial Guinea",
+    "slug": "equatorial-guinea",
+    "region": "Africa",
+    "tourradar_slug": "equatorial-guinea",
+    "tier": 3,
+    "related": ["cameroon", "gabon", "congo"]
+  },
+  {
+    "name": "Eritrea",
+    "slug": "eritrea",
+    "region": "Africa",
+    "tourradar_slug": "eritrea",
+    "tier": 3,
+    "related": ["ethiopia", "djibouti", "sudan"]
+  },
+  {
+    "name": "Estonia",
+    "slug": "estonia",
+    "region": "Europe",
+    "tourradar_slug": "estonia",
+    "tier": 2,
+    "related": ["latvia", "lithuania", "finland"]
+  },
+  {
+    "name": "Eswatini",
+    "slug": "eswatini",
+    "region": "Africa",
+    "tourradar_slug": "swaziland",
+    "tier": 3,
+    "related": ["south-africa", "mozambique", "lesotho"]
+  },
+  {
+    "name": "Ethiopia",
+    "slug": "ethiopia",
+    "region": "Africa",
+    "tourradar_slug": "ethiopia",
+    "tier": 2,
+    "related": ["kenya", "tanzania", "eritrea", "djibouti"]
+  },
+  {
+    "name": "Fiji",
+    "slug": "fiji",
+    "region": "Oceania",
+    "tourradar_slug": "fiji",
+    "tier": 2,
+    "related": ["new-zealand", "australia", "samoa", "tonga"]
+  },
+  {
+    "name": "Finland",
+    "slug": "finland",
+    "region": "Europe",
+    "tourradar_slug": "finland",
+    "tier": 2,
+    "related": ["sweden", "norway", "estonia", "iceland"]
+  },
+  {
+    "name": "France",
+    "slug": "france",
+    "region": "Europe",
+    "tourradar_slug": "france",
+    "tier": 1,
+    "related": ["italy", "spain", "switzerland", "belgium"]
+  },
+  {
+    "name": "Gabon",
+    "slug": "gabon",
+    "region": "Africa",
+    "tourradar_slug": "gabon",
+    "tier": 3,
+    "related": ["cameroon", "congo", "equatorial-guinea"]
+  },
+  {
+    "name": "Gambia",
+    "slug": "gambia",
+    "region": "Africa",
+    "tourradar_slug": "gambia",
+    "tier": 3,
+    "related": ["senegal", "guinea-bissau", "guinea"]
+  },
+  {
+    "name": "Georgia",
+    "slug": "georgia",
+    "region": "Asia",
+    "tourradar_slug": "georgia",
+    "tier": 2,
+    "related": ["armenia", "turkey", "azerbaijan"]
+  },
+  {
+    "name": "Germany",
+    "slug": "germany",
+    "region": "Europe",
+    "tourradar_slug": "germany",
+    "tier": 2,
+    "related": ["austria", "switzerland", "czech-republic", "netherlands"]
+  },
+  {
+    "name": "Ghana",
+    "slug": "ghana",
+    "region": "Africa",
+    "tourradar_slug": "ghana",
+    "tier": 2,
+    "related": ["ivory-coast", "togo", "burkina-faso", "nigeria"]
+  },
+  {
+    "name": "Greece",
+    "slug": "greece",
+    "region": "Europe",
+    "tourradar_slug": "greece",
+    "tier": 1,
+    "related": ["turkey", "italy", "croatia", "cyprus"]
+  },
+  {
+    "name": "Grenada",
+    "slug": "grenada",
+    "region": "Caribbean",
+    "tourradar_slug": "grenada",
+    "tier": 3,
+    "related": ["trinidad-and-tobago", "barbados", "saint-vincent-and-the-grenadines"]
+  },
+  {
+    "name": "Guatemala",
+    "slug": "guatemala",
+    "region": "Central America",
+    "tourradar_slug": "guatemala",
+    "tier": 2,
+    "related": ["belize", "mexico", "honduras", "el-salvador"]
+  },
+  {
+    "name": "Guinea",
+    "slug": "guinea",
+    "region": "Africa",
+    "tourradar_slug": "guinea",
+    "tier": 3,
+    "related": ["sierra-leone", "senegal", "guinea-bissau", "liberia"]
+  },
+  {
+    "name": "Guinea-Bissau",
+    "slug": "guinea-bissau",
+    "region": "Africa",
+    "tourradar_slug": "guinea-bissau",
+    "tier": 3,
+    "related": ["senegal", "gambia", "guinea"]
+  },
+  {
+    "name": "Guyana",
+    "slug": "guyana",
+    "region": "South America",
+    "tourradar_slug": "guyana",
+    "tier": 3,
+    "related": ["suriname", "brazil", "venezuela"]
+  },
+  {
+    "name": "Haiti",
+    "slug": "haiti",
+    "region": "Caribbean",
+    "tourradar_slug": "haiti",
+    "tier": 3,
+    "related": ["dominican-republic", "cuba", "jamaica"]
+  },
+  {
+    "name": "Honduras",
+    "slug": "honduras",
+    "region": "Central America",
+    "tourradar_slug": "honduras",
+    "tier": 3,
+    "related": ["guatemala", "el-salvador", "nicaragua", "belize"]
+  },
+  {
+    "name": "Hungary",
+    "slug": "hungary",
+    "region": "Europe",
+    "tourradar_slug": "hungary",
+    "tier": 2,
+    "related": ["austria", "czech-republic", "slovakia", "romania"]
+  },
+  {
+    "name": "Iceland",
+    "slug": "iceland",
+    "region": "Europe",
+    "tourradar_slug": "iceland",
+    "tier": 1,
+    "related": ["norway", "finland", "sweden", "greenland"]
+  },
+  {
+    "name": "India",
+    "slug": "india",
+    "region": "Asia",
+    "tourradar_slug": "india",
+    "tier": 1,
+    "related": ["nepal", "sri-lanka", "bhutan", "thailand"]
+  },
+  {
+    "name": "Indonesia",
+    "slug": "indonesia",
+    "region": "Asia",
+    "tourradar_slug": "indonesia",
+    "tier": 1,
+    "related": ["malaysia", "thailand", "philippines", "vietnam"]
+  },
+  {
+    "name": "Iran",
+    "slug": "iran",
+    "region": "Middle East",
+    "tourradar_slug": "iran",
+    "tier": 2,
+    "related": ["turkey", "iraq", "afghanistan", "armenia"]
+  },
+  {
+    "name": "Iraq",
+    "slug": "iraq",
+    "region": "Middle East",
+    "tourradar_slug": "iraq",
+    "tier": 3,
+    "related": ["iran", "turkey", "jordan", "syria"]
+  },
+  {
+    "name": "Ireland",
+    "slug": "ireland",
+    "region": "Europe",
+    "tourradar_slug": "ireland",
+    "tier": 2,
+    "related": ["united-kingdom", "iceland", "scotland"]
+  },
+  {
+    "name": "Israel",
+    "slug": "israel",
+    "region": "Middle East",
+    "tourradar_slug": "israel",
+    "tier": 2,
+    "related": ["jordan", "egypt", "palestine", "turkey"]
+  },
+  {
+    "name": "Italy",
+    "slug": "italy",
+    "region": "Europe",
+    "tourradar_slug": "italy",
+    "tier": 1,
+    "related": ["france", "greece", "croatia", "spain"]
+  },
+  {
+    "name": "Ivory Coast",
+    "slug": "ivory-coast",
+    "region": "Africa",
+    "tourradar_slug": "ivory-coast",
+    "tier": 3,
+    "related": ["ghana", "liberia", "burkina-faso", "guinea"]
+  },
+  {
+    "name": "Jamaica",
+    "slug": "jamaica",
+    "region": "Caribbean",
+    "tourradar_slug": "jamaica",
+    "tier": 2,
+    "related": ["cuba", "dominican-republic", "bahamas"]
+  },
+  {
+    "name": "Japan",
+    "slug": "japan",
+    "region": "Asia",
+    "tourradar_slug": "japan",
+    "tier": 1,
+    "related": ["south-korea", "china", "vietnam", "thailand"]
+  },
+  {
+    "name": "Jordan",
+    "slug": "jordan",
+    "region": "Middle East",
+    "tourradar_slug": "jordan",
+    "tier": 1,
+    "related": ["israel", "egypt", "turkey", "lebanon"]
+  },
+  {
+    "name": "Kazakhstan",
+    "slug": "kazakhstan",
+    "region": "Asia",
+    "tourradar_slug": "kazakhstan",
+    "tier": 3,
+    "related": ["uzbekistan", "kyrgyzstan", "russia", "china"]
+  },
+  {
+    "name": "Kenya",
+    "slug": "kenya",
+    "region": "Africa",
+    "tourradar_slug": "kenya",
+    "tier": 2,
+    "related": ["tanzania", "uganda", "ethiopia", "south-africa"]
+  },
+  {
+    "name": "Kiribati",
+    "slug": "kiribati",
+    "region": "Oceania",
+    "tourradar_slug": "kiribati",
+    "tier": 3,
+    "related": ["fiji", "marshall-islands", "tuvalu"]
+  },
+  {
+    "name": "Kuwait",
+    "slug": "kuwait",
+    "region": "Middle East",
+    "tourradar_slug": "kuwait",
+    "tier": 3,
+    "related": ["saudi-arabia", "iraq", "bahrain", "qatar"]
+  },
+  {
+    "name": "Kyrgyzstan",
+    "slug": "kyrgyzstan",
+    "region": "Asia",
+    "tourradar_slug": "kyrgyzstan",
+    "tier": 2,
+    "related": ["kazakhstan", "uzbekistan", "tajikistan"]
+  },
+  {
+    "name": "Laos",
+    "slug": "laos",
+    "region": "Asia",
+    "tourradar_slug": "laos",
+    "tier": 2,
+    "related": ["vietnam", "cambodia", "thailand", "myanmar"]
+  },
+  {
+    "name": "Latvia",
+    "slug": "latvia",
+    "region": "Europe",
+    "tourradar_slug": "latvia",
+    "tier": 2,
+    "related": ["lithuania", "estonia", "finland"]
+  },
+  {
+    "name": "Lebanon",
+    "slug": "lebanon",
+    "region": "Middle East",
+    "tourradar_slug": "lebanon",
+    "tier": 3,
+    "related": ["jordan", "syria", "turkey", "israel"]
+  },
+  {
+    "name": "Lesotho",
+    "slug": "lesotho",
+    "region": "Africa",
+    "tourradar_slug": "lesotho",
+    "tier": 3,
+    "related": ["south-africa", "eswatini", "mozambique"]
+  },
+  {
+    "name": "Liberia",
+    "slug": "liberia",
+    "region": "Africa",
+    "tourradar_slug": "liberia",
+    "tier": 3,
+    "related": ["sierra-leone", "ivory-coast", "guinea"]
+  },
+  {
+    "name": "Libya",
+    "slug": "libya",
+    "region": "Africa",
+    "tourradar_slug": "libya",
+    "tier": 3,
+    "related": ["tunisia", "algeria", "egypt", "chad"]
+  },
+  {
+    "name": "Liechtenstein",
+    "slug": "liechtenstein",
+    "region": "Europe",
+    "tourradar_slug": "liechtenstein",
+    "tier": 3,
+    "related": ["switzerland", "austria", "germany"]
+  },
+  {
+    "name": "Lithuania",
+    "slug": "lithuania",
+    "region": "Europe",
+    "tourradar_slug": "lithuania",
+    "tier": 2,
+    "related": ["latvia", "estonia", "poland"]
+  },
+  {
+    "name": "Luxembourg",
+    "slug": "luxembourg",
+    "region": "Europe",
+    "tourradar_slug": "luxembourg",
+    "tier": 3,
+    "related": ["belgium", "france", "germany"]
+  },
+  {
+    "name": "Madagascar",
+    "slug": "madagascar",
+    "region": "Africa",
+    "tourradar_slug": "madagascar",
+    "tier": 2,
+    "related": ["mozambique", "tanzania", "mauritius", "comoros"]
+  },
+  {
+    "name": "Malawi",
+    "slug": "malawi",
+    "region": "Africa",
+    "tourradar_slug": "malawi",
+    "tier": 3,
+    "related": ["zambia", "mozambique", "tanzania"]
+  },
+  {
+    "name": "Malaysia",
+    "slug": "malaysia",
+    "region": "Asia",
+    "tourradar_slug": "malaysia",
+    "tier": 2,
+    "related": ["indonesia", "thailand", "singapore", "philippines"]
+  },
+  {
+    "name": "Maldives",
+    "slug": "maldives",
+    "region": "Asia",
+    "tourradar_slug": "maldives",
+    "tier": 2,
+    "related": ["sri-lanka", "india", "thailand", "indonesia"]
+  },
+  {
+    "name": "Mali",
+    "slug": "mali",
+    "region": "Africa",
+    "tourradar_slug": "mali",
+    "tier": 3,
+    "related": ["burkina-faso", "niger", "senegal", "mauritania"]
+  },
+  {
+    "name": "Malta",
+    "slug": "malta",
+    "region": "Europe",
+    "tourradar_slug": "malta",
+    "tier": 2,
+    "related": ["italy", "greece", "cyprus", "tunisia"]
+  },
+  {
+    "name": "Marshall Islands",
+    "slug": "marshall-islands",
+    "region": "Oceania",
+    "tourradar_slug": "marshall-islands",
+    "tier": 3,
+    "related": ["micronesia", "kiribati", "palau"]
+  },
+  {
+    "name": "Mauritania",
+    "slug": "mauritania",
+    "region": "Africa",
+    "tourradar_slug": "mauritania",
+    "tier": 3,
+    "related": ["senegal", "mali", "morocco", "algeria"]
+  },
+  {
+    "name": "Mauritius",
+    "slug": "mauritius",
+    "region": "Africa",
+    "tourradar_slug": "mauritius",
+    "tier": 2,
+    "related": ["madagascar", "seychelles", "reunion"]
+  },
+  {
+    "name": "Mexico",
+    "slug": "mexico",
+    "region": "North America",
+    "tourradar_slug": "mexico",
+    "tier": 1,
+    "related": ["guatemala", "cuba", "costa-rica", "colombia"]
+  },
+  {
+    "name": "Micronesia",
+    "slug": "micronesia",
+    "region": "Oceania",
+    "tourradar_slug": "micronesia",
+    "tier": 3,
+    "related": ["palau", "marshall-islands", "guam"]
+  },
+  {
+    "name": "Moldova",
+    "slug": "moldova",
+    "region": "Europe",
+    "tourradar_slug": "moldova",
+    "tier": 3,
+    "related": ["romania", "ukraine", "hungary"]
+  },
+  {
+    "name": "Monaco",
+    "slug": "monaco",
+    "region": "Europe",
+    "tourradar_slug": "monaco",
+    "tier": 3,
+    "related": ["france", "italy", "spain"]
+  },
+  {
+    "name": "Mongolia",
+    "slug": "mongolia",
+    "region": "Asia",
+    "tourradar_slug": "mongolia",
+    "tier": 2,
+    "related": ["china", "russia", "kazakhstan"]
+  },
+  {
+    "name": "Montenegro",
+    "slug": "montenegro",
+    "region": "Europe",
+    "tourradar_slug": "montenegro",
+    "tier": 2,
+    "related": ["croatia", "albania", "bosnia-and-herzegovina", "serbia"]
+  },
+  {
+    "name": "Morocco",
+    "slug": "morocco",
+    "region": "Africa",
+    "tourradar_slug": "morocco",
+    "tier": 1,
+    "related": ["spain", "portugal", "tunisia", "egypt"]
+  },
+  {
+    "name": "Mozambique",
+    "slug": "mozambique",
+    "region": "Africa",
+    "tourradar_slug": "mozambique",
+    "tier": 3,
+    "related": ["tanzania", "south-africa", "malawi", "madagascar"]
+  },
+  {
+    "name": "Myanmar",
+    "slug": "myanmar",
+    "region": "Asia",
+    "tourradar_slug": "myanmar",
+    "tier": 2,
+    "related": ["thailand", "laos", "cambodia", "india"]
+  },
+  {
+    "name": "Namibia",
+    "slug": "namibia",
+    "region": "Africa",
+    "tourradar_slug": "namibia",
+    "tier": 2,
+    "related": ["botswana", "south-africa", "zambia", "angola"]
+  },
+  {
+    "name": "Nauru",
+    "slug": "nauru",
+    "region": "Oceania",
+    "tourradar_slug": "nauru",
+    "tier": 3,
+    "related": ["kiribati", "marshall-islands", "micronesia"]
+  },
+  {
+    "name": "Nepal",
+    "slug": "nepal",
+    "region": "Asia",
+    "tourradar_slug": "nepal",
+    "tier": 1,
+    "related": ["india", "bhutan", "tibet", "sri-lanka"]
+  },
+  {
+    "name": "Netherlands",
+    "slug": "netherlands",
+    "region": "Europe",
+    "tourradar_slug": "netherlands",
+    "tier": 2,
+    "related": ["belgium", "germany", "france", "luxembourg"]
+  },
+  {
+    "name": "New Zealand",
+    "slug": "new-zealand",
+    "region": "Oceania",
+    "tourradar_slug": "new-zealand",
+    "tier": 1,
+    "related": ["australia", "fiji", "samoa", "tonga"]
+  },
+  {
+    "name": "Nicaragua",
+    "slug": "nicaragua",
+    "region": "Central America",
+    "tourradar_slug": "nicaragua",
+    "tier": 2,
+    "related": ["costa-rica", "honduras", "guatemala", "el-salvador"]
+  },
+  {
+    "name": "Niger",
+    "slug": "niger",
+    "region": "Africa",
+    "tourradar_slug": "niger",
+    "tier": 3,
+    "related": ["nigeria", "chad", "mali", "burkina-faso"]
+  },
+  {
+    "name": "Nigeria",
+    "slug": "nigeria",
+    "region": "Africa",
+    "tourradar_slug": "nigeria",
+    "tier": 3,
+    "related": ["ghana", "cameroon", "benin", "niger"]
+  },
+  {
+    "name": "North Korea",
+    "slug": "north-korea",
+    "region": "Asia",
+    "tourradar_slug": "north-korea",
+    "tier": 3,
+    "related": ["south-korea", "china", "japan"]
+  },
+  {
+    "name": "North Macedonia",
+    "slug": "north-macedonia",
+    "region": "Europe",
+    "tourradar_slug": "macedonia",
+    "tier": 2,
+    "related": ["albania", "greece", "bulgaria", "serbia"]
+  },
+  {
+    "name": "Norway",
+    "slug": "norway",
+    "region": "Europe",
+    "tourradar_slug": "norway",
+    "tier": 1,
+    "related": ["sweden", "iceland", "finland", "denmark"]
+  },
+  {
+    "name": "Oman",
+    "slug": "oman",
+    "region": "Middle East",
+    "tourradar_slug": "oman",
+    "tier": 2,
+    "related": ["united-arab-emirates", "saudi-arabia", "jordan", "yemen"]
+  },
+  {
+    "name": "Pakistan",
+    "slug": "pakistan",
+    "region": "Asia",
+    "tourradar_slug": "pakistan",
+    "tier": 3,
+    "related": ["india", "iran", "afghanistan", "china"]
+  },
+  {
+    "name": "Palau",
+    "slug": "palau",
+    "region": "Oceania",
+    "tourradar_slug": "palau",
+    "tier": 3,
+    "related": ["micronesia", "philippines", "marshall-islands"]
+  },
+  {
+    "name": "Palestine",
+    "slug": "palestine",
+    "region": "Middle East",
+    "tourradar_slug": "palestine",
+    "tier": 3,
+    "related": ["israel", "jordan", "egypt"]
+  },
+  {
+    "name": "Panama",
+    "slug": "panama",
+    "region": "Central America",
+    "tourradar_slug": "panama",
+    "tier": 2,
+    "related": ["costa-rica", "colombia", "nicaragua"]
+  },
+  {
+    "name": "Papua New Guinea",
+    "slug": "papua-new-guinea",
+    "region": "Oceania",
+    "tourradar_slug": "papua-new-guinea",
+    "tier": 3,
+    "related": ["indonesia", "australia", "solomon-islands", "fiji"]
+  },
+  {
+    "name": "Paraguay",
+    "slug": "paraguay",
+    "region": "South America",
+    "tourradar_slug": "paraguay",
+    "tier": 3,
+    "related": ["argentina", "brazil", "bolivia", "uruguay"]
+  },
+  {
+    "name": "Peru",
+    "slug": "peru",
+    "region": "South America",
+    "tourradar_slug": "peru",
+    "tier": 1,
+    "related": ["bolivia", "ecuador", "colombia", "chile"]
+  },
+  {
+    "name": "Philippines",
+    "slug": "philippines",
+    "region": "Asia",
+    "tourradar_slug": "philippines",
+    "tier": 2,
+    "related": ["indonesia", "malaysia", "vietnam", "thailand"]
+  },
+  {
+    "name": "Poland",
+    "slug": "poland",
+    "region": "Europe",
+    "tourradar_slug": "poland",
+    "tier": 2,
+    "related": ["czech-republic", "germany", "slovakia", "ukraine"]
+  },
+  {
+    "name": "Portugal",
+    "slug": "portugal",
+    "region": "Europe",
+    "tourradar_slug": "portugal",
+    "tier": 1,
+    "related": ["spain", "morocco", "france", "italy"]
+  },
+  {
+    "name": "Qatar",
+    "slug": "qatar",
+    "region": "Middle East",
+    "tourradar_slug": "qatar",
+    "tier": 3,
+    "related": ["united-arab-emirates", "saudi-arabia", "bahrain", "oman"]
+  },
+  {
+    "name": "Romania",
+    "slug": "romania",
+    "region": "Europe",
+    "tourradar_slug": "romania",
+    "tier": 2,
+    "related": ["bulgaria", "hungary", "moldova", "serbia"]
+  },
+  {
+    "name": "Russia",
+    "slug": "russia",
+    "region": "Europe",
+    "tourradar_slug": "russia",
+    "tier": 2,
+    "related": ["mongolia", "finland", "china", "kazakhstan"]
+  },
+  {
+    "name": "Rwanda",
+    "slug": "rwanda",
+    "region": "Africa",
+    "tourradar_slug": "rwanda",
+    "tier": 2,
+    "related": ["uganda", "tanzania", "democratic-republic-of-the-congo", "burundi"]
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "slug": "saint-kitts-and-nevis",
+    "region": "Caribbean",
+    "tourradar_slug": "saint-kitts-and-nevis",
+    "tier": 3,
+    "related": ["antigua-and-barbuda", "dominica", "saint-lucia"]
+  },
+  {
+    "name": "Saint Lucia",
+    "slug": "saint-lucia",
+    "region": "Caribbean",
+    "tourradar_slug": "saint-lucia",
+    "tier": 3,
+    "related": ["barbados", "dominica", "saint-vincent-and-the-grenadines"]
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "slug": "saint-vincent-and-the-grenadines",
+    "region": "Caribbean",
+    "tourradar_slug": "saint-vincent-and-the-grenadines",
+    "tier": 3,
+    "related": ["grenada", "saint-lucia", "barbados"]
+  },
+  {
+    "name": "Samoa",
+    "slug": "samoa",
+    "region": "Oceania",
+    "tourradar_slug": "samoa",
+    "tier": 3,
+    "related": ["fiji", "tonga", "new-zealand"]
+  },
+  {
+    "name": "San Marino",
+    "slug": "san-marino",
+    "region": "Europe",
+    "tourradar_slug": "san-marino",
+    "tier": 3,
+    "related": ["italy", "vatican-city", "croatia"]
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "slug": "sao-tome-and-principe",
+    "region": "Africa",
+    "tourradar_slug": "sao-tome-and-principe",
+    "tier": 3,
+    "related": ["gabon", "equatorial-guinea", "cameroon"]
+  },
+  {
+    "name": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "region": "Middle East",
+    "tourradar_slug": "saudi-arabia",
+    "tier": 2,
+    "related": ["united-arab-emirates", "jordan", "oman", "egypt"]
+  },
+  {
+    "name": "Senegal",
+    "slug": "senegal",
+    "region": "Africa",
+    "tourradar_slug": "senegal",
+    "tier": 2,
+    "related": ["gambia", "guinea-bissau", "mali", "morocco"]
+  },
+  {
+    "name": "Serbia",
+    "slug": "serbia",
+    "region": "Europe",
+    "tourradar_slug": "serbia",
+    "tier": 2,
+    "related": ["montenegro", "bosnia-and-herzegovina", "north-macedonia", "croatia"]
+  },
+  {
+    "name": "Seychelles",
+    "slug": "seychelles",
+    "region": "Africa",
+    "tourradar_slug": "seychelles",
+    "tier": 3,
+    "related": ["mauritius", "madagascar", "maldives"]
+  },
+  {
+    "name": "Sierra Leone",
+    "slug": "sierra-leone",
+    "region": "Africa",
+    "tourradar_slug": "sierra-leone",
+    "tier": 3,
+    "related": ["liberia", "guinea", "ghana"]
+  },
+  {
+    "name": "Singapore",
+    "slug": "singapore",
+    "region": "Asia",
+    "tourradar_slug": "singapore",
+    "tier": 2,
+    "related": ["malaysia", "indonesia", "thailand", "vietnam"]
+  },
+  {
+    "name": "Slovakia",
+    "slug": "slovakia",
+    "region": "Europe",
+    "tourradar_slug": "slovakia",
+    "tier": 2,
+    "related": ["czech-republic", "austria", "hungary", "poland"]
+  },
+  {
+    "name": "Slovenia",
+    "slug": "slovenia",
+    "region": "Europe",
+    "tourradar_slug": "slovenia",
+    "tier": 2,
+    "related": ["croatia", "austria", "italy", "hungary"]
+  },
+  {
+    "name": "Solomon Islands",
+    "slug": "solomon-islands",
+    "region": "Oceania",
+    "tourradar_slug": "solomon-islands",
+    "tier": 3,
+    "related": ["papua-new-guinea", "vanuatu", "fiji"]
+  },
+  {
+    "name": "Somalia",
+    "slug": "somalia",
+    "region": "Africa",
+    "tourradar_slug": "somalia",
+    "tier": 3,
+    "related": ["ethiopia", "djibouti", "kenya"]
+  },
+  {
+    "name": "South Africa",
+    "slug": "south-africa",
+    "region": "Africa",
+    "tourradar_slug": "south-africa",
+    "tier": 1,
+    "related": ["namibia", "botswana", "zimbabwe", "mozambique"]
+  },
+  {
+    "name": "South Korea",
+    "slug": "south-korea",
+    "region": "Asia",
+    "tourradar_slug": "south-korea",
+    "tier": 2,
+    "related": ["japan", "china", "vietnam", "thailand"]
+  },
+  {
+    "name": "South Sudan",
+    "slug": "south-sudan",
+    "region": "Africa",
+    "tourradar_slug": "south-sudan",
+    "tier": 3,
+    "related": ["sudan", "ethiopia", "uganda", "kenya"]
+  },
+  {
+    "name": "Spain",
+    "slug": "spain",
+    "region": "Europe",
+    "tourradar_slug": "spain",
+    "tier": 1,
+    "related": ["portugal", "france", "italy", "morocco"]
+  },
+  {
+    "name": "Sri Lanka",
+    "slug": "sri-lanka",
+    "region": "Asia",
+    "tourradar_slug": "sri-lanka",
+    "tier": 1,
+    "related": ["india", "maldives", "nepal", "thailand"]
+  },
+  {
+    "name": "Sudan",
+    "slug": "sudan",
+    "region": "Africa",
+    "tourradar_slug": "sudan",
+    "tier": 3,
+    "related": ["egypt", "ethiopia", "south-sudan", "chad"]
+  },
+  {
+    "name": "Suriname",
+    "slug": "suriname",
+    "region": "South America",
+    "tourradar_slug": "suriname",
+    "tier": 3,
+    "related": ["guyana", "brazil", "french-guiana"]
+  },
+  {
+    "name": "Sweden",
+    "slug": "sweden",
+    "region": "Europe",
+    "tourradar_slug": "sweden",
+    "tier": 2,
+    "related": ["norway", "finland", "denmark", "iceland"]
+  },
+  {
+    "name": "Switzerland",
+    "slug": "switzerland",
+    "region": "Europe",
+    "tourradar_slug": "switzerland",
+    "tier": 2,
+    "related": ["austria", "germany", "france", "italy"]
+  },
+  {
+    "name": "Syria",
+    "slug": "syria",
+    "region": "Middle East",
+    "tourradar_slug": "syria",
+    "tier": 3,
+    "related": ["lebanon", "jordan", "turkey", "iraq"]
+  },
+  {
+    "name": "Tajikistan",
+    "slug": "tajikistan",
+    "region": "Asia",
+    "tourradar_slug": "tajikistan",
+    "tier": 3,
+    "related": ["kyrgyzstan", "uzbekistan", "afghanistan", "china"]
+  },
+  {
+    "name": "Tanzania",
+    "slug": "tanzania",
+    "region": "Africa",
+    "tourradar_slug": "tanzania",
+    "tier": 1,
+    "related": ["kenya", "uganda", "rwanda", "zanzibar"]
+  },
+  {
+    "name": "Thailand",
+    "slug": "thailand",
+    "region": "Asia",
+    "tourradar_slug": "thailand",
+    "tier": 1,
+    "related": ["vietnam", "cambodia", "laos", "indonesia"]
+  },
+  {
+    "name": "Togo",
+    "slug": "togo",
+    "region": "Africa",
+    "tourradar_slug": "togo",
+    "tier": 3,
+    "related": ["ghana", "benin", "burkina-faso"]
+  },
+  {
+    "name": "Tonga",
+    "slug": "tonga",
+    "region": "Oceania",
+    "tourradar_slug": "tonga",
+    "tier": 3,
+    "related": ["fiji", "samoa", "new-zealand"]
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "slug": "trinidad-and-tobago",
+    "region": "Caribbean",
+    "tourradar_slug": "trinidad-and-tobago",
+    "tier": 3,
+    "related": ["grenada", "barbados", "venezuela"]
+  },
+  {
+    "name": "Tunisia",
+    "slug": "tunisia",
+    "region": "Africa",
+    "tourradar_slug": "tunisia",
+    "tier": 2,
+    "related": ["morocco", "algeria", "libya", "italy"]
+  },
+  {
+    "name": "Turkey",
+    "slug": "turkey",
+    "region": "Middle East",
+    "tourradar_slug": "turkey",
+    "tier": 1,
+    "related": ["greece", "egypt", "jordan", "iran"]
+  },
+  {
+    "name": "Turkmenistan",
+    "slug": "turkmenistan",
+    "region": "Asia",
+    "tourradar_slug": "turkmenistan",
+    "tier": 3,
+    "related": ["uzbekistan", "iran", "afghanistan", "kazakhstan"]
+  },
+  {
+    "name": "Tuvalu",
+    "slug": "tuvalu",
+    "region": "Oceania",
+    "tourradar_slug": "tuvalu",
+    "tier": 3,
+    "related": ["kiribati", "fiji", "samoa"]
+  },
+  {
+    "name": "Uganda",
+    "slug": "uganda",
+    "region": "Africa",
+    "tourradar_slug": "uganda",
+    "tier": 2,
+    "related": ["rwanda", "kenya", "tanzania", "democratic-republic-of-the-congo"]
+  },
+  {
+    "name": "Ukraine",
+    "slug": "ukraine",
+    "region": "Europe",
+    "tourradar_slug": "ukraine",
+    "tier": 3,
+    "related": ["poland", "romania", "moldova", "hungary"]
+  },
+  {
+    "name": "United Arab Emirates",
+    "slug": "united-arab-emirates",
+    "region": "Middle East",
+    "tourradar_slug": "united-arab-emirates",
+    "tier": 2,
+    "related": ["oman", "saudi-arabia", "qatar", "jordan"]
+  },
+  {
+    "name": "United Kingdom",
+    "slug": "united-kingdom",
+    "region": "Europe",
+    "tourradar_slug": "united-kingdom",
+    "tier": 2,
+    "related": ["ireland", "france", "iceland", "netherlands"]
+  },
+  {
+    "name": "United States",
+    "slug": "united-states",
+    "region": "North America",
+    "tourradar_slug": "united-states",
+    "tier": 2,
+    "related": ["canada", "mexico", "costa-rica"]
+  },
+  {
+    "name": "Uruguay",
+    "slug": "uruguay",
+    "region": "South America",
+    "tourradar_slug": "uruguay",
+    "tier": 2,
+    "related": ["argentina", "brazil", "chile"]
+  },
+  {
+    "name": "Uzbekistan",
+    "slug": "uzbekistan",
+    "region": "Asia",
+    "tourradar_slug": "uzbekistan",
+    "tier": 2,
+    "related": ["kyrgyzstan", "tajikistan", "kazakhstan", "turkmenistan"]
+  },
+  {
+    "name": "Vanuatu",
+    "slug": "vanuatu",
+    "region": "Oceania",
+    "tourradar_slug": "vanuatu",
+    "tier": 3,
+    "related": ["fiji", "new-caledonia", "solomon-islands"]
+  },
+  {
+    "name": "Vatican City",
+    "slug": "vatican-city",
+    "region": "Europe",
+    "tourradar_slug": "vatican-city",
+    "tier": 3,
+    "related": ["italy", "san-marino", "malta"]
+  },
+  {
+    "name": "Venezuela",
+    "slug": "venezuela",
+    "region": "South America",
+    "tourradar_slug": "venezuela",
+    "tier": 3,
+    "related": ["colombia", "brazil", "guyana", "trinidad-and-tobago"]
+  },
+  {
+    "name": "Vietnam",
+    "slug": "vietnam",
+    "region": "Asia",
+    "tourradar_slug": "vietnam",
+    "tier": 1,
+    "related": ["cambodia", "laos", "thailand", "indonesia"]
+  },
+  {
+    "name": "Yemen",
+    "slug": "yemen",
+    "region": "Middle East",
+    "tourradar_slug": "yemen",
+    "tier": 3,
+    "related": ["oman", "saudi-arabia", "djibouti"]
+  },
+  {
+    "name": "Zambia",
+    "slug": "zambia",
+    "region": "Africa",
+    "tourradar_slug": "zambia",
+    "tier": 2,
+    "related": ["zimbabwe", "botswana", "malawi", "tanzania"]
+  },
+  {
+    "name": "Zimbabwe",
+    "slug": "zimbabwe",
+    "region": "Africa",
+    "tourradar_slug": "zimbabwe",
+    "tier": 2,
+    "related": ["zambia", "botswana", "south-africa", "mozambique"]
+  }
+]

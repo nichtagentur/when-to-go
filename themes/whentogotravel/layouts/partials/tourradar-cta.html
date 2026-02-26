@@ -1,0 +1,9 @@
+{{ if .Params.tourradar_url }}
+<div class="tourradar-cta">
+  <h3>Explore {{ .Params.country_name }} with a Guided Tour</h3>
+  <p>Browse multi-day tours in {{ .Params.country_name }} -- handpicked adventures with expert local guides, accommodation, and transport included.</p>
+  <a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank" class="cta-button">
+    View {{ .Params.country_name }} Tours on TourRadar
+  </a>
+</div>
+{{ end }}

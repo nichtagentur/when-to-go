@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="hero-section">
+  <div class="container">
+    <h1>Best Time to Visit Every Country in the World</h1>
+    <p class="hero-subtitle">Expert travel guides with month-by-month weather, activities, and tour recommendations for all 195 countries.</p>
+  </div>
+</div>
+
+<div class="container">
+  <section class="country-grid">
+    {{ range (where .Site.RegularPages "Section" "countries").ByTitle }}
+    <article class="country-card">
+      {{ if .Params.hero_image }}
+      <a href="{{ .RelPermalink }}">
+        <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="400" height="250" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="card-content">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        {{ if .Params.best_months }}
+        <p class="best-months">Best time: <strong>{{ .Params.best_months }}</strong></p>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </section>
+</div>
+{{ end }}

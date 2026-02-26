@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+
+  {{ if .Content }}
+  <div class="section-intro">
+    {{ .Content }}
+  </div>
+  {{ end }}
+
+  <div class="country-grid">
+    {{ range .Pages.ByTitle }}
+    <article class="country-card">
+      {{ if .Params.hero_image }}
+      <a href="{{ .RelPermalink }}">
+        <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="400" height="250" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="card-content">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        {{ if .Params.best_months }}
+        <p class="best-months">Best time: <strong>{{ .Params.best_months }}</strong></p>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

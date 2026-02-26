@@ -2,7 +2,7 @@
 """
 Email-based AI editor for the When-To-Go travel blog.
 
-Monitors ai-assistent@nichtagentur.at for emails from nico@tourradar.com,
+Monitors i-am-a-user@nichtagentur.at for emails from nico@tourradar.com,
 uses AI to interpret edit instructions, updates articles, deploys, and replies.
 """
 
@@ -139,6 +139,28 @@ def connect_imap() -> imaplib.IMAP4_SSL:
     conn.login(EMAIL_USER, EMAIL_PASS)
     conn.select("INBOX")
     return conn
+
+
+def rescue_from_junk(conn: imaplib.IMAP4_SSL):
+    """Move any emails from ALLOWED_SENDER out of Junk into INBOX."""
+    try:
+        status, _ = conn.select("Junk")
+        if status != "OK":
+            return
+        status, data = conn.search(None, f'(FROM "{ALLOWED_SENDER}")')
+        if status != "OK" or not data[0]:
+            conn.select("INBOX")
+            return
+        uids = data[0].split()
+        for uid in uids:
+            conn.copy(uid, "INBOX")
+            conn.store(uid, "+FLAGS", "\\Deleted")
+            log.info(f"Rescued email from Junk folder (UID {uid.decode()})")
+        conn.expunge()
+    except Exception as e:
+        log.warning(f"Junk folder check failed: {e}")
+    finally:
+        conn.select("INBOX")
 
 
 def get_unread_from_sender(conn: imaplib.IMAP4_SSL) -> list:
@@ -458,6 +480,7 @@ def main():
     while True:
         try:
             conn = connect_imap()
+            rescue_from_junk(conn)
             uids = get_unread_from_sender(conn)
 
             if uids:

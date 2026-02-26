@@ -1,68 +1,133 @@
 {{ define "main" }}
-<article class="country-article container">
+<article class="article" itemscope itemtype="https://schema.org/Article">
 
-  {{/* Hero image */}}
-  {{ if .Params.hero_image }}
-  <div class="hero-image">
-    <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="1200" height="630" loading="eager">
-    {{ if .Params.hero_credit }}
-    <p class="photo-credit">Photo: {{ .Params.hero_credit }}</p>
-    {{ end }}
-  </div>
-  {{ end }}
-
-  <h1>{{ .Title }}</h1>
-
-  {{/* Table of contents */}}
-  {{ if .TableOfContents }}
-  <nav class="toc">
-    <h2>Contents</h2>
-    {{ .TableOfContents }}
-  </nav>
-  {{ end }}
-
-  {{/* Article content */}}
-  <div class="article-content">
-    {{ .Content }}
-  </div>
-
-  {{/* Climate chart */}}
-  {{ if .Params.climate_chart }}
-  <div class="climate-chart">
-    <img src="{{ .Params.climate_chart | relURL }}" alt="Climate chart for {{ .Params.country_name }}" width="800" height="500" loading="lazy">
-  </div>
-  {{ end }}
-
-  {{/* TourRadar CTA */}}
-  {{ partial "tourradar-cta.html" . }}
-
-  {{/* FAQ section */}}
-  {{ if .Params.faq }}
-  <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
-    {{ range .Params.faq }}
-    <div class="faq-item">
-      <h3>{{ .question }}</h3>
-      <p>{{ .answer }}</p>
+  {{/* ---- HERO ---- */}}
+  <header class="article-hero">
+    {{ if .Params.hero_image }}
+    <div class="article-hero__image">
+      <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="1400" height="700" loading="eager" itemprop="image">
+      <div class="article-hero__overlay"></div>
+    </div>
+    {{ else }}
+    <div class="article-hero__image article-hero__image--empty">
+      <div class="article-hero__overlay"></div>
     </div>
     {{ end }}
-  </section>
-  {{ end }}
-
-  {{/* Related countries */}}
-  {{ if .Params.related_countries }}
-  <section class="related-countries">
-    <h2>Related Destinations</h2>
-    <ul>
-      {{ range .Params.related_countries }}
-      <li><a href="{{ printf "/best-time-to-visit-%s/" . | relURL }}">Best Time to Visit {{ . | humanize | title }}</a></li>
+    <div class="article-hero__content">
+      {{ if .Params.region }}
+      <span class="article-hero__region">{{ .Params.region }}</span>
       {{ end }}
-    </ul>
-  </section>
-  {{ end }}
+      <h1 class="article-hero__title" itemprop="headline">{{ .Title }}</h1>
+      <p class="article-hero__meta">
+        By <a href="{{ "/about/elena-vasquez/" | relURL }}" itemprop="author">{{ .Site.Params.author }}</a>
+        &middot; Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}" itemprop="dateModified">{{ .Lastmod.Format "January 2, 2006" }}</time>
+        {{ if .Params.best_months }}
+        &middot; Best time: <strong>{{ .Params.best_months }}</strong>
+        {{ end }}
+      </p>
+      {{ if .Params.hero_credit }}
+      <p class="article-hero__credit">{{ .Params.hero_credit }}</p>
+      {{ end }}
+    </div>
+  </header>
 
-  {{/* Author bio */}}
-  {{ partial "author-bio.html" . }}
+  {{/* ---- ARTICLE BODY ---- */}}
+  <div class="article-layout">
+
+    {{/* Sidebar: TOC */}}
+    <aside class="article-sidebar">
+      {{ if .TableOfContents }}
+      <nav class="toc" aria-label="Table of Contents">
+        <p class="toc__label">In This Guide</p>
+        {{ .TableOfContents }}
+      </nav>
+      {{ end }}
+    </aside>
+
+    {{/* Main content */}}
+    <div class="article-body" itemprop="articleBody">
+
+      {{/* Climate chart -- prominent, near top */}}
+      {{ if .Params.climate_chart }}
+      <figure class="climate-chart">
+        <img src="{{ .Params.climate_chart | relURL }}" alt="Monthly climate overview for {{ .Params.country_name }} showing best times to visit" width="1792" height="1024" loading="eager">
+        <figcaption>Monthly climate overview for {{ .Params.country_name }} &mdash; AI-generated infographic</figcaption>
+      </figure>
+      {{ end }}
+
+      {{/* Article content */}}
+      <div class="prose">
+        {{ .Content }}
+      </div>
+
+      {{/* TourRadar CTA */}}
+      {{ partial "tourradar-cta.html" . }}
+
+      {{/* FAQ section */}}
+      {{ if .Params.faq }}
+      <section class="faq-section" aria-label="Frequently Asked Questions">
+        <h2 class="faq-section__title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {{ range .Params.faq }}
+          <details class="faq-item">
+            <summary class="faq-item__question">{{ .question }}</summary>
+            <div class="faq-item__answer">
+              <p>{{ .answer }}</p>
+            </div>
+          </details>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{/* References / Sources */}}
+      {{ if .Params.country_name }}
+      <section class="references" aria-label="Sources and References">
+        <h2 class="references__title">Sources &amp; References</h2>
+        <ul class="references__list">
+          <li><a href="https://www.weatherbase.com/" rel="noopener" target="_blank">Weatherbase</a> &mdash; Historical climate data and averages</li>
+          <li><a href="https://www.worlddata.info/" rel="noopener" target="_blank">WorldData.info</a> &mdash; Climate tables and weather statistics</li>
+          <li><a href="https://www.lonelyplanet.com/{{ .Params.country_name | urlize }}" rel="noopener" target="_blank">Lonely Planet: {{ .Params.country_name }}</a> &mdash; Destination overview</li>
+          <li><a href="https://www.roughguides.com/{{ .Params.country_name | urlize }}/" rel="noopener" target="_blank">Rough Guides: {{ .Params.country_name }}</a> &mdash; Travel information</li>
+          <li><a href="https://travel.state.gov/" rel="noopener" target="_blank">U.S. Department of State</a> &mdash; Travel advisories</li>
+          {{ if .Params.tourradar_url }}
+          <li><a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank">TourRadar: {{ .Params.country_name }} Tours</a> &mdash; Multi-day guided tours</li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+
+      {{/* Related countries */}}
+      {{ if .Params.related_countries }}
+      <section class="related" aria-label="Related Destinations">
+        <h2 class="related__title">Continue Exploring</h2>
+        <div class="related__grid">
+          {{ range .Params.related_countries }}
+          {{ $slug := . }}
+          {{ range where $.Site.RegularPages "Section" "countries" }}
+          {{ if eq .Params.country_name ($slug | humanize | title) }}
+          <a href="{{ .RelPermalink }}" class="related__card">
+            {{ if .Params.hero_image }}
+            <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" loading="lazy">
+            {{ end }}
+            <span class="related__card-name">{{ .Params.country_name }}</span>
+          </a>
+          {{ end }}
+          {{ end }}
+          {{/* Fallback for countries not yet generated */}}
+          <a href="{{ printf "/best-time-to-visit-%s/" $slug | relURL }}" class="related__card related__card--placeholder">
+            <span class="related__card-name">{{ $slug | humanize | title }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      {{/* Author bio */}}
+      {{ partial "author-bio.html" . }}
+
+    </div>
+  </div>
 
 </article>
 {{ end }}

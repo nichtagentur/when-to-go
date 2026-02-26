@@ -1,30 +1,41 @@
 {{ define "main" }}
-<div class="container">
-  <h1>{{ .Title }}</h1>
-
-  {{ if .Content }}
-  <div class="section-intro">
-    {{ .Content }}
-  </div>
-  {{ end }}
-
-  <div class="country-grid">
-    {{ range .Pages.ByTitle }}
-    <article class="country-card">
-      {{ if .Params.hero_image }}
-      <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="400" height="250" loading="lazy">
-      </a>
+<div class="list-page">
+  <div class="list-hero">
+    <div class="container">
+      <h1 class="list-hero__title">{{ .Title }}</h1>
+      {{ if .Content }}
+      <div class="list-hero__intro">{{ .Content }}</div>
       {{ end }}
-      <div class="card-content">
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Description }}</p>
-        {{ if .Params.best_months }}
-        <p class="best-months">Best time: <strong>{{ .Params.best_months }}</strong></p>
-        {{ end }}
-      </div>
-    </article>
-    {{ end }}
+    </div>
+  </div>
+  <div class="container-wide">
+    <div class="country-grid">
+      {{ range .Pages.ByTitle }}
+      <article class="country-card">
+        <a href="{{ .RelPermalink }}" class="country-card__link">
+          <div class="country-card__image">
+            {{ if .Params.hero_image }}
+            <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" loading="lazy">
+            {{ else }}
+            <div class="country-card__placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.25"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            </div>
+            {{ end }}
+            <div class="country-card__overlay"></div>
+          </div>
+          <div class="country-card__body">
+            {{ if .Params.region }}
+            <span class="country-card__region">{{ .Params.region }}</span>
+            {{ end }}
+            <h3 class="country-card__title">{{ .Params.country_name | default .Title }}</h3>
+            {{ if .Params.best_months }}
+            <p class="country-card__months">{{ .Params.best_months }}</p>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}

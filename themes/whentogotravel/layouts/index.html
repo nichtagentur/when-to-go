@@ -1,29 +1,125 @@
 {{ define "main" }}
-<div class="hero-section">
-  <div class="container">
-    <h1>Best Time to Visit Every Country in the World</h1>
-    <p class="hero-subtitle">Expert travel guides with month-by-month weather, activities, and tour recommendations for all 195 countries.</p>
-  </div>
-</div>
 
-<div class="container">
-  <section class="country-grid">
-    {{ range (where .Site.RegularPages "Section" "countries").ByTitle }}
-    <article class="country-card">
-      {{ if .Params.hero_image }}
-      <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" width="400" height="250" loading="lazy">
-      </a>
-      {{ end }}
-      <div class="card-content">
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <p>{{ .Description }}</p>
-        {{ if .Params.best_months }}
-        <p class="best-months">Best time: <strong>{{ .Params.best_months }}</strong></p>
-        {{ end }}
+{{/* ---- HERO ---- */}}
+<section class="home-hero">
+  <div class="home-hero__bg">
+    <div class="home-hero__grain"></div>
+  </div>
+  <div class="home-hero__content">
+    <p class="home-hero__eyebrow">Travel Intelligence for 195 Countries</p>
+    <h1 class="home-hero__title">Know Before<br>You Go</h1>
+    <p class="home-hero__subtitle">Month-by-month climate guides, seasonal activities, and expert recommendations to help you travel at the perfect time.</p>
+    <div class="home-hero__stats">
+      <div class="stat">
+        <span class="stat__number">195</span>
+        <span class="stat__label">Countries</span>
       </div>
+      <div class="stat">
+        <span class="stat__number">12</span>
+        <span class="stat__label">Months Covered</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">2026</span>
+        <span class="stat__label">Updated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ---- FEATURED ARTICLES ---- */}}
+{{ $countries := (where .Site.RegularPages "Section" "countries").ByDate.Reverse }}
+{{ if $countries }}
+<section class="featured-section">
+  <div class="container-wide">
+    <div class="section-header">
+      <span class="section-label">Latest Guides</span>
+      <h2 class="section-title">Explore Destinations</h2>
+    </div>
+
+    {{/* Featured large card for most recent */}}
+    {{ with index $countries 0 }}
+    <article class="featured-card">
+      <a href="{{ .RelPermalink }}" class="featured-card__link">
+        <div class="featured-card__image">
+          {{ if .Params.hero_image }}
+          <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" loading="eager">
+          {{ else }}
+          <div class="featured-card__placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          {{ end }}
+          <div class="featured-card__overlay"></div>
+        </div>
+        <div class="featured-card__body">
+          {{ if .Params.region }}
+          <span class="featured-card__region">{{ .Params.region }}</span>
+          {{ end }}
+          <h3 class="featured-card__title">{{ .Params.country_name }}</h3>
+          <p class="featured-card__desc">{{ .Description }}</p>
+          {{ if .Params.best_months }}
+          <p class="featured-card__months"><span>Best time:</span> {{ .Params.best_months }}</p>
+          {{ end }}
+        </div>
+      </a>
     </article>
     {{ end }}
-  </section>
-</div>
+
+    {{/* Grid of remaining cards */}}
+    {{ if gt (len $countries) 1 }}
+    <div class="country-grid">
+      {{ range after 1 $countries }}
+      <article class="country-card">
+        <a href="{{ .RelPermalink }}" class="country-card__link">
+          <div class="country-card__image">
+            {{ if .Params.hero_image }}
+            <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" loading="lazy">
+            {{ else }}
+            <div class="country-card__placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.25"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            </div>
+            {{ end }}
+            <div class="country-card__overlay"></div>
+          </div>
+          <div class="country-card__body">
+            {{ if .Params.region }}
+            <span class="country-card__region">{{ .Params.region }}</span>
+            {{ end }}
+            <h3 class="country-card__title">{{ .Params.country_name }}</h3>
+            {{ if .Params.best_months }}
+            <p class="country-card__months">{{ .Params.best_months }}</p>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ---- ABOUT STRIP ---- */}}
+<section class="about-strip">
+  <div class="container">
+    <div class="about-strip__inner">
+      <div class="about-strip__text">
+        <span class="section-label">About the Project</span>
+        <h2>Travel timing,<br>done right.</h2>
+        <p>Every guide is researched, structured with month-by-month data, and regularly updated. We cover weather patterns, regional differences, activity seasons, and budget tips so you can make the most of every trip.</p>
+        <a href="{{ "/about/" | relURL }}" class="text-link">Learn more about our process &rarr;</a>
+      </div>
+      <div class="about-strip__author">
+        <div class="author-card">
+          <div class="author-card__avatar">EV</div>
+          <div>
+            <p class="author-card__name">{{ .Site.Params.author }}</p>
+            <p class="author-card__role">{{ .Site.Params.authorTitle }}</p>
+            <p class="author-card__bio">80+ countries visited across 15 years of professional travel writing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}

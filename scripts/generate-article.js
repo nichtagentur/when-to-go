@@ -18,6 +18,7 @@ const CONTENT_DIR = path.join(ROOT, 'content', 'countries');
 // Required environment variables
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 if (!OPENROUTER_API_KEY) {
@@ -192,10 +193,10 @@ description: "Discover the best time to visit ${country.name}. Month-by-month we
 country_name: "${country.name}"
 region: "${countryData.region}"
 best_months: "${bestMonths}"
-hero_image: "${heroImage?.path || ''}"
+hero_image: "${heroImage?.path?.replace(/^\\//, '') || ''}"
 hero_alt: "${heroImage?.alt || country.name + ' travel destination'}"
 hero_credit: "${heroImage?.credit || ''}"
-climate_chart: "${climateChart || ''}"
+climate_chart: "${climateChart?.replace(/^\\//, '') || ''}"
 tourradar_url: "https://www.tourradar.com/d/${countryData.tourradar_slug}"
 keywords:
   - "best time to visit ${country.name}"
@@ -246,14 +247,15 @@ async function main() {
     const { content: articleContent, model } = await generateContent(prompt, OPENROUTER_API_KEY);
     console.log(`Article generated with ${model} (${articleContent.length} chars)\n`);
 
-    // Step 2: Fetch hero image from Pexels
+    // Step 2: Generate/fetch hero image (Gemini Nano Banana -> Pexels -> Unsplash)
     let heroImage = null;
-    if (PEXELS_API_KEY) {
-      console.log('--- Step 2: Fetching hero image ---');
-      heroImage = await fetchHeroImage(entry.name, entry.slug, PEXELS_API_KEY);
+    const imageApiKey = GEMINI_API_KEY || PEXELS_API_KEY;
+    if (imageApiKey) {
+      console.log('--- Step 2: Generating hero image ---');
+      heroImage = await fetchHeroImage(entry.name, entry.slug, imageApiKey);
       console.log('');
     } else {
-      console.log('--- Step 2: Skipping hero image (no PEXELS_API_KEY) ---\n');
+      console.log('--- Step 2: Skipping hero image (no GEMINI_API_KEY or PEXELS_API_KEY) ---\n');
     }
 
     // Step 3: Generate climate chart

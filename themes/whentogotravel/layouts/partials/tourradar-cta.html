@@ -1,9 +1,17 @@
 {{ if .Params.tourradar_url }}
-<div class="tourradar-cta">
-  <h3>Explore {{ .Params.country_name }} with a Guided Tour</h3>
-  <p>Browse multi-day tours in {{ .Params.country_name }} -- handpicked adventures with expert local guides, accommodation, and transport included.</p>
-  <a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank" class="cta-button">
-    View {{ .Params.country_name }} Tours on TourRadar
-  </a>
-</div>
+<aside class="tourradar-cta" aria-label="Tour recommendation">
+  <div class="tourradar-cta__inner">
+    <div class="tourradar-cta__icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v4a1 1 0 0 0 1 1h3"/><path d="M7 7v10"/><path d="M10 8v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1z"/><path d="M17 7v10"/><path d="M21 7v4a1 1 0 0 1-1 1h-3"/></svg>
+    </div>
+    <div class="tourradar-cta__text">
+      <p class="tourradar-cta__heading">Explore {{ .Params.country_name }} with a guided tour</p>
+      <p class="tourradar-cta__desc">Browse multi-day adventures in {{ .Params.country_name }} with expert local guides, accommodation, and transport included. Handpicked itineraries from trusted operators.</p>
+    </div>
+    <a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank" class="tourradar-cta__button">
+      View Tours
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+    </a>
+  </div>
+</aside>
 {{ end }}

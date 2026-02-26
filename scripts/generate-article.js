@@ -150,14 +150,17 @@ function parseFAQs(content) {
 
 // Extract "best months" summary from the content
 function extractBestMonths(content, countryName) {
-  // Try to find a clear best-month statement
+  const months = 'January|February|March|April|May|June|July|August|September|October|November|December';
+  const monthPattern = `((?:${months})(?:\\s*(?:to|through|and|,|-)\\s*(?:${months}))*)`;
+
   const patterns = [
-    /best (?:time|months?) (?:to visit|for).*?(?:is|are)\s+([A-Z][a-z]+(?:\s+(?:to|through|and|,)\s+[A-Z][a-z]+)*)/i,
-    /(?:visit|go).*?(?:between|during|in)\s+([A-Z][a-z]+(?:\s+(?:to|through|and|,)\s+[A-Z][a-z]+)*)/i,
+    new RegExp(`best (?:time|months?) (?:to visit|for)[^.]*?(?:is|are)\\s+${monthPattern}`, 'i'),
+    new RegExp(`(?:visit|go)[^.]*?(?:between|during|from|in)\\s+${monthPattern}`, 'i'),
+    new RegExp(`(?:ideal|perfect|optimal)[^.]*?${monthPattern}`, 'i'),
   ];
   for (const pat of patterns) {
     const m = content.match(pat);
-    if (m) return m[1];
+    if (m) return m[1].trim();
   }
   return 'Varies by region';
 }

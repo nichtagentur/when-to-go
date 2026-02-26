@@ -26,6 +26,12 @@ if (!OPENROUTER_API_KEY) {
   process.exit(1);
 }
 
+// Valid month names for validation
+const VALID_MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+
 // Load data files
 function loadQueue() {
   return JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf-8'));
@@ -66,6 +72,10 @@ function buildPrompt(country, countryData) {
 
   return `Write a comprehensive travel guide titled "Best Time to Visit ${country.name} (${year} Guide)".
 
+IMPORTANT: Start your response with this exact marker on the first line:
+<!-- BEST_MONTHS: Month1, Month2, Month3 -->
+Replace Month1, Month2, Month3 with the actual best months to visit ${country.name} (use full month names like January, February, etc.). List 2-5 months.
+
 REQUIREMENTS:
 - 2,500-3,500 words
 - Write in first person as Elena Vasquez, senior travel editor
@@ -74,8 +84,9 @@ REQUIREMENTS:
 - Use the keyword naturally 4-6 times throughout the article
 
 STRUCTURE (use these exact H2 headings):
-## Overview: Why Visit ${country.name}?
-(2-3 paragraphs about what makes this country special)
+## At a Glance
+(Quick-reference table in markdown format with these rows: Best Months, Avg Temp, Peak Season, Budget Level, Currency.
+Then 1 paragraph, 3-4 sentences, directly answering when is the best time to visit ${country.name} and why.)
 
 ## Month-by-Month Weather Guide
 (Cover all 12 months with temperature, rainfall, and what to expect. Use a markdown table with columns: Month | Temperature | Rainfall | Crowds | Rating)
@@ -105,7 +116,7 @@ RELATED DESTINATIONS:
 Briefly mention these nearby alternatives: ${relatedNames}
 
 FAQ SECTION:
-At the very end, write exactly 5 FAQs in this exact format:
+Write exactly 5 FAQs in this exact format:
 <!-- FAQ_START -->
 Q: What is the best month to visit ${country.name}?
 A: [Answer]
@@ -123,7 +134,23 @@ Q: Is ${country.name} safe to visit?
 A: [Answer]
 <!-- FAQ_END -->
 
-IMPORTANT: Write ONLY the article content. Do NOT include any markdown frontmatter. Start directly with the ## Overview heading.`;
+REFERENCES SECTION:
+After the FAQ section, provide 5-7 country-specific authoritative references in this exact format:
+<!-- REFS_START -->
+- [Title of source](URL) - Brief description of what this source covers
+- [Title of source](URL) - Brief description of what this source covers
+<!-- REFS_END -->
+
+Use ONLY real, verifiable URLs from these types of sources:
+- Official tourism board of ${country.name}
+- CIA World Factbook page for ${country.name}
+- National weather/meteorological service
+- UNESCO World Heritage pages relevant to ${country.name}
+- Lonely Planet ${country.name} overview
+- U.S. Department of State travel advisory for ${country.name}
+- World Health Organization travel advice
+
+IMPORTANT: Write ONLY the article content. Do NOT include any markdown frontmatter. Start directly with the <!-- BEST_MONTHS marker.`;
 }
 
 // Parse FAQ items from the article content
@@ -149,15 +176,47 @@ function parseFAQs(content) {
   return faqs;
 }
 
-// Extract "best months" summary from the content
+// Parse references from REFS markers in the article content
+function parseReferences(content) {
+  const refsMatch = content.match(/<!-- REFS_START -->([\s\S]*?)<!-- REFS_END -->/);
+  if (!refsMatch) return [];
+
+  const refsText = refsMatch[1];
+  const refs = [];
+  // Match lines like: - [Title](URL) - Description
+  const linePattern = /- \[([^\]]+)\]\(([^)]+)\)\s*[-–—]\s*(.+)/g;
+  let match;
+
+  while ((match = linePattern.exec(refsText)) !== null) {
+    refs.push({
+      title: match[1].trim(),
+      url: match[2].trim(),
+      description: match[3].trim(),
+    });
+  }
+
+  return refs;
+}
+
+// Extract "best months" from the BEST_MONTHS marker, with regex fallback
 function extractBestMonths(content, countryName) {
-  const months = 'January|February|March|April|May|June|July|August|September|October|November|December';
-  const monthPattern = `((?:${months})(?:\\s*(?:to|through|and|,|-)\\s*(?:${months}))*)`;
+  // Try the explicit marker first
+  const markerMatch = content.match(/<!-- BEST_MONTHS:\s*(.+?)\s*-->/);
+  if (markerMatch) {
+    const months = markerMatch[1].trim();
+    // Validate it actually contains month names
+    const hasRealMonths = VALID_MONTHS.some(m => months.includes(m));
+    if (hasRealMonths) return months;
+  }
+
+  // Fallback: regex extraction from prose
+  const monthsPattern = 'January|February|March|April|May|June|July|August|September|October|November|December';
+  const monthCapture = `((?:${monthsPattern})(?:\\s*(?:to|through|and|,|-)\\s*(?:${monthsPattern}))*)`;
 
   const patterns = [
-    new RegExp(`best (?:time|months?) (?:to visit|for)[^.]*?(?:is|are)\\s+${monthPattern}`, 'i'),
-    new RegExp(`(?:visit|go)[^.]*?(?:between|during|from|in)\\s+${monthPattern}`, 'i'),
-    new RegExp(`(?:ideal|perfect|optimal)[^.]*?${monthPattern}`, 'i'),
+    new RegExp(`best (?:time|months?) (?:to visit|for)[^.]*?(?:is|are)\\s+${monthCapture}`, 'i'),
+    new RegExp(`(?:visit|go)[^.]*?(?:between|during|from|in)\\s+${monthCapture}`, 'i'),
+    new RegExp(`(?:ideal|perfect|optimal)[^.]*?${monthCapture}`, 'i'),
   ];
   for (const pat of patterns) {
     const m = content.match(pat);
@@ -171,10 +230,13 @@ function buildMarkdown(country, countryData, articleContent, faqs, heroImage, cl
   const year = new Date().getFullYear();
   const now = new Date().toISOString();
   const bestMonths = extractBestMonths(articleContent, country.name);
+  const references = parseReferences(articleContent);
 
-  // Clean FAQ markers from article body
+  // Clean markers from article body (FAQ, REFS, BEST_MONTHS)
   const cleanContent = articleContent
+    .replace(/<!-- BEST_MONTHS:.*?-->\n?/, '')
     .replace(/<!-- FAQ_START -->[\s\S]*?<!-- FAQ_END -->/, '')
+    .replace(/<!-- REFS_START -->[\s\S]*?<!-- REFS_END -->/, '')
     .trim();
 
   // Build frontmatter
@@ -183,6 +245,17 @@ function buildMarkdown(country, countryData, articleContent, faqs, heroImage, cl
   ).join('\n');
 
   const relatedYaml = (countryData.related || []).map(r => `  - "${r}"`).join('\n');
+
+  // Build references YAML
+  const refsYaml = references.map(r =>
+    `  - title: "${r.title.replace(/"/g, '\\"')}"\n    url: "${r.url}"\n    description: "${r.description.replace(/"/g, '\\"')}"`
+  ).join('\n');
+
+  // Pre-compute image paths (avoid regex inside template literals)
+  const heroPath = heroImage && heroImage.path ? heroImage.path.replace(/^\//, '') : '';
+  const heroAlt = (heroImage && heroImage.alt) ? heroImage.alt : (country.name + ' travel destination');
+  const heroCredit = (heroImage && heroImage.credit) ? heroImage.credit : '';
+  const chartPath = climateChart ? climateChart.replace(/^\//, '') : '';
 
   const frontmatter = `---
 title: "Best Time to Visit ${country.name} (${year} Guide)"
@@ -193,10 +266,10 @@ description: "Discover the best time to visit ${country.name}. Month-by-month we
 country_name: "${country.name}"
 region: "${countryData.region}"
 best_months: "${bestMonths}"
-hero_image: "${heroImage?.path?.replace(/^\\//, '') || ''}"
-hero_alt: "${heroImage?.alt || country.name + ' travel destination'}"
-hero_credit: "${heroImage?.credit || ''}"
-climate_chart: "${climateChart?.replace(/^\\//, '') || ''}"
+hero_image: "${heroPath}"
+hero_alt: "${heroAlt}"
+hero_credit: "${heroCredit}"
+climate_chart: "${chartPath}"
 tourradar_url: "https://www.tourradar.com/d/${countryData.tourradar_slug}"
 keywords:
   - "best time to visit ${country.name}"
@@ -207,6 +280,8 @@ related_countries:
 ${relatedYaml}
 faq:
 ${faqYaml}
+references:
+${refsYaml}
 ---
 
 ${cleanContent}`;
@@ -268,10 +343,13 @@ async function main() {
       console.log('--- Step 3: Skipping climate chart (no OPENAI_API_KEY) ---\n');
     }
 
-    // Step 4: Parse FAQs and build markdown
+    // Step 4: Parse FAQs, references, and build markdown
     console.log('--- Step 4: Building Hugo markdown ---');
     const faqs = parseFAQs(articleContent);
     console.log(`Parsed ${faqs.length} FAQ items`);
+
+    const refs = parseReferences(articleContent);
+    console.log(`Parsed ${refs.length} references`);
 
     const markdown = buildMarkdown(entry, countryData, articleContent, faqs, heroImage, climateChart);
 
@@ -293,6 +371,7 @@ async function main() {
     console.log(`Country: ${entry.name}`);
     console.log(`Model: ${model}`);
     console.log(`FAQs: ${faqs.length}`);
+    console.log(`References: ${refs.length}`);
     console.log(`Hero image: ${heroImage ? 'Yes' : 'No'}`);
     console.log(`Climate chart: ${climateChart ? 'Yes' : 'No'}`);
     console.log(`Remaining: ${pending} countries`);

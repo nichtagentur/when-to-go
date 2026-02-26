@@ -80,32 +80,46 @@
       </section>
       {{ end }}
 
-      {{/* References / Sources */}}
+      {{/* References / Sources -- use frontmatter if available, generic fallback for old articles */}}
       {{ if .Params.country_name }}
       <section class="references" aria-label="Sources and References">
         <h2 class="references__title">Sources &amp; References</h2>
         <ul class="references__list">
-          <li><a href="https://www.weatherbase.com/" rel="noopener" target="_blank">Weatherbase</a> &mdash; Historical climate data and averages</li>
-          <li><a href="https://www.worlddata.info/" rel="noopener" target="_blank">WorldData.info</a> &mdash; Climate tables and weather statistics</li>
-          <li><a href="https://www.lonelyplanet.com/{{ .Params.country_name | urlize }}" rel="noopener" target="_blank">Lonely Planet: {{ .Params.country_name }}</a> &mdash; Destination overview</li>
-          <li><a href="https://www.roughguides.com/{{ .Params.country_name | urlize }}/" rel="noopener" target="_blank">Rough Guides: {{ .Params.country_name }}</a> &mdash; Travel information</li>
-          <li><a href="https://travel.state.gov/" rel="noopener" target="_blank">U.S. Department of State</a> &mdash; Travel advisories</li>
-          {{ if .Params.tourradar_url }}
-          <li><a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank">TourRadar: {{ .Params.country_name }} Tours</a> &mdash; Multi-day guided tours</li>
+          {{ if .Params.references }}
+            {{/* New articles: country-specific references from frontmatter */}}
+            {{ range .Params.references }}
+            <li><a href="{{ .url }}" rel="noopener" target="_blank">{{ .title }}</a> &mdash; {{ .description }}</li>
+            {{ end }}
+            {{ if $.Params.tourradar_url }}
+            <li><a href="{{ $.Params.tourradar_url }}" rel="sponsored noopener" target="_blank">TourRadar: {{ $.Params.country_name }} Tours</a> &mdash; Multi-day guided tours</li>
+            {{ end }}
+          {{ else }}
+            {{/* Fallback for older articles without references in frontmatter */}}
+            <li><a href="https://www.lonelyplanet.com/{{ .Params.country_name | urlize }}" rel="noopener" target="_blank">Lonely Planet: {{ .Params.country_name }}</a> &mdash; Destination overview</li>
+            <li><a href="https://travel.state.gov/" rel="noopener" target="_blank">U.S. Department of State</a> &mdash; Travel advisories</li>
+            {{ if .Params.tourradar_url }}
+            <li><a href="{{ .Params.tourradar_url }}" rel="sponsored noopener" target="_blank">TourRadar: {{ .Params.country_name }} Tours</a> &mdash; Multi-day guided tours</li>
+            {{ end }}
           {{ end }}
         </ul>
       </section>
       {{ end }}
 
-      {{/* Related countries */}}
+      {{/* Related countries -- only show published articles (no 404 links) */}}
       {{ if .Params.related_countries }}
+      {{ $hasRelated := false }}
+      {{ $relatedPages := slice }}
+      {{ range .Params.related_countries }}
+        {{ $page := $.Site.GetPage (printf "/countries/%s" .) }}
+        {{ if $page }}
+          {{ $relatedPages = $relatedPages | append $page }}
+        {{ end }}
+      {{ end }}
+      {{ if gt (len $relatedPages) 0 }}
       <section class="related" aria-label="Related Destinations">
         <h2 class="related__title">Continue Exploring</h2>
         <div class="related__grid">
-          {{ range .Params.related_countries }}
-          {{ $slug := . }}
-          {{ range where $.Site.RegularPages "Section" "countries" }}
-          {{ if eq .Params.country_name ($slug | humanize | title) }}
+          {{ range $relatedPages }}
           <a href="{{ .RelPermalink }}" class="related__card">
             {{ if .Params.hero_image }}
             <img src="{{ .Params.hero_image | relURL }}" alt="{{ .Params.hero_alt }}" loading="lazy">
@@ -113,14 +127,9 @@
             <span class="related__card-name">{{ .Params.country_name }}</span>
           </a>
           {{ end }}
-          {{ end }}
-          {{/* Fallback for countries not yet generated */}}
-          <a href="{{ printf "/best-time-to-visit-%s/" $slug | relURL }}" class="related__card related__card--placeholder">
-            <span class="related__card-name">{{ $slug | humanize | title }}</span>
-          </a>
-          {{ end }}
         </div>
       </section>
+      {{ end }}
       {{ end }}
 
       {{/* Author bio */}}

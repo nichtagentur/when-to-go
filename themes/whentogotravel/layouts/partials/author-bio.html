@@ -5,7 +5,7 @@
   <div class="author-bio__content">
     <p class="author-bio__label">Written by</p>
     <p class="author-bio__name">
-      <a href="{{ "/about/elena-vasquez/" | relURL }}" itemprop="url">
+      <a href="{{ with .Site.GetPage "/about/elena-vasquez" }}{{ .RelPermalink }}{{ end }}" itemprop="url">
         <span itemprop="name">{{ .Site.Params.author }}</span>
       </a>
     </p>

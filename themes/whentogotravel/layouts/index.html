@@ -106,7 +106,7 @@
         <span class="section-label">About the Project</span>
         <h2>Travel timing,<br>done right.</h2>
         <p>Every guide is researched, structured with month-by-month data, and regularly updated. We cover weather patterns, regional differences, activity seasons, and budget tips so you can make the most of every trip.</p>
-        <a href="{{ "/about/" | relURL }}" class="text-link">Learn more about our process &rarr;</a>
+        {{ with .Site.GetPage "/about" }}<a href="{{ .RelPermalink }}" class="text-link">Learn more about our process &rarr;</a>{{ end }}
       </div>
       <div class="about-strip__author">
         <div class="author-card">

@@ -1,15 +1,15 @@
   <header class="site-header">
     <div class="header-inner">
-      <a href="{{ "/" | relURL }}" class="site-logo">
+      <a href="{{ .Site.Home.RelPermalink }}" class="site-logo">
         <span class="logo-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
         </span>
         <span class="logo-text">When To Go</span>
       </a>
       <nav class="main-nav">
-        <a href="{{ "/" | relURL }}">Destinations</a>
-        <a href="{{ "/about/" | relURL }}">About</a>
-        <a href="{{ "/about/elena-vasquez/" | relURL }}">Our Editor</a>
+        <a href="{{ .Site.Home.RelPermalink }}">Destinations</a>
+        {{ with .Site.GetPage "/about" }}<a href="{{ .RelPermalink }}">About</a>{{ end }}
+        {{ with .Site.GetPage "/about/elena-vasquez" }}<a href="{{ .RelPermalink }}">Our Editor</a>{{ end }}
       </nav>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>

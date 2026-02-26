@@ -2,7 +2,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="{{ "/" | relURL }}" class="footer-logo">
+          <a href="{{ .Site.Home.RelPermalink }}" class="footer-logo">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
             When To Go
           </a>
@@ -11,9 +11,9 @@
         <div class="footer-links">
           <div class="footer-col">
             <p class="footer-col__title">Navigate</p>
-            <a href="{{ "/" | relURL }}">All Destinations</a>
-            <a href="{{ "/about/" | relURL }}">About</a>
-            <a href="{{ "/about/elena-vasquez/" | relURL }}">Our Editor</a>
+            <a href="{{ .Site.Home.RelPermalink }}">All Destinations</a>
+            {{ with .Site.GetPage "/about" }}<a href="{{ .RelPermalink }}">About</a>{{ end }}
+            {{ with .Site.GetPage "/about/elena-vasquez" }}<a href="{{ .RelPermalink }}">Our Editor</a>{{ end }}
           </div>
           <div class="footer-col">
             <p class="footer-col__title">Resources</p>
@@ -25,7 +25,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; {{ now.Year }} When To Go. All rights reserved.</p>
-        <p>Written by <a href="{{ "/about/elena-vasquez/" | relURL }}">{{ .Site.Params.author }}</a></p>
+        <p>Written by {{ with .Site.GetPage "/about/elena-vasquez" }}<a href="{{ .RelPermalink }}">{{ $.Site.Params.author }}</a>{{ end }}</p>
       </div>
     </div>
   </footer>

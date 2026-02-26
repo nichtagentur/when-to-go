@@ -19,7 +19,7 @@
       {{ end }}
       <h1 class="article-hero__title" itemprop="headline">{{ .Title }}</h1>
       <p class="article-hero__meta">
-        By <a href="{{ "/about/elena-vasquez/" | relURL }}" itemprop="author">{{ .Site.Params.author }}</a>
+        By {{ with .Site.GetPage "/about/elena-vasquez" }}<a href="{{ .RelPermalink }}" itemprop="author">{{ $.Site.Params.author }}</a>{{ end }}
         &middot; Updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}" itemprop="dateModified">{{ .Lastmod.Format "January 2, 2006" }}</time>
         {{ if .Params.best_months }}
         &middot; Best time: <strong>{{ .Params.best_months }}</strong>

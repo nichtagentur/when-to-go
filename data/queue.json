@@ -3,8 +3,8 @@
     "slug": "argentina",
     "name": "Argentina",
     "tier": 1,
-    "status": "pending",
-    "generatedAt": null,
+    "status": "generated",
+    "generatedAt": "2026-02-26T10:35:40.836Z",
     "error": null
   },
   {

@@ -15,6 +15,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -49,3 +55,36 @@ jobs:
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Add article: $(git diff --staged --name-only | grep content/countries | head -1 | xargs basename .md | sed 's/-/ /g')"
           git push
+
+  build-deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest changes
+        run: git pull origin main
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.145.0'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --baseURL "https://nichtagentur.github.io/when-to-go/"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -235,8 +235,8 @@
     "slug": "vietnam",
     "name": "Vietnam",
     "tier": 1,
-    "status": "pending",
-    "generatedAt": null,
+    "status": "generated",
+    "generatedAt": "2026-02-26T12:32:17.478Z",
     "error": null
   },
   {
